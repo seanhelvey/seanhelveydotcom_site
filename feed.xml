@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sean Helvey</title>
+    <description>Welcome to my site!
+</description>
+    <link>http://seanhelvey.com/</link>
+    <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 29 Jun 2016 13:30:54 -0600</pubDate>
+    <lastBuildDate>Wed, 29 Jun 2016 13:30:54 -0600</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 18 Jun 2016 12:46:27 -0600</pubDate>
+        <link>http://seanhelvey.com/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/welcome-to-jekyll/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Impact Hub Berlin</title>
+        <description>&lt;p&gt;I hope that Impact Hub Berlin never changes. Members will come and go, superficial improvements may happen over time, but the warm and colorful community there can withstand all of it. To understand this co-working space, you have to know &lt;a href=&quot;https://zurich.impacthub.ch/impact-hub-berlin/&quot; target=&quot;_blank&quot;&gt;its history&lt;/a&gt; and the people behind it.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1180&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/10/image-801041-breitwandaufmacher-gtpu.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-1180&quot; src=&quot;/assets/images/seanhelvey/2015/10/image-801041-breitwandaufmacher-gtpu-300x112.jpg&quot; alt=&quot;Managing Director Nele Kapretz with Angela Merkel &quot; width=&quot;300&quot; height=&quot;112&quot; srcset=&quot;http://www.seanhelvey.com/wp-content/uploads/2015/10/image-801041-breitwandaufmacher-gtpu-300x112.jpg 300w, http://www.seanhelvey.com/wp-content/uploads/2015/10/image-801041-breitwandaufmacher-gtpu.jpg 860w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Managing Director Nele Kapretz with Angela Merkel
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One prior endeavor to form Impact Hub Berlin failed. A different group within the community rallied and made another attempt at a prototype, but it still wasn’t clear that the organization would be sustainable. Finally, the effort was successful, and the people here have the space that they always wanted. Take a look at some of the pictures from the renovation below.&lt;/p&gt;
+
+&lt;p&gt;This space was designed by members Margit Sichrovsky and Kim le Roux of &lt;a href=&quot;http://www.lxsy.de/&quot;&gt;http://www.lxsy.de/&lt;/a&gt;. They are creating some incredible social funding opportunities in South Africa with their work in Gap Housing. The pair has also made their mark on Impact Hub Berlin in a number of unique ways.&lt;/p&gt;
+
+&lt;p&gt;The “focus area” has an incredible little nook and another section for taking naps! The cafe has a secret spot above the kitchen which can only be accessed with a ladder. The phone booth is unique from every one that I’ve ever seen as is the teams’s commitment to updating and improving the space. The signage out front was being replaced during my week there.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1139&quot; style=&quot;width: 235px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2882_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-1139 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2882_1024-225x300.jpg&quot; alt=&quot;Member Host Matt Beer&quot; width=&quot;225&quot; height=&quot;300&quot; srcset=&quot;http://www.seanhelvey.com/wp-content/uploads/2015/09/thumb_IMG_2882_1024-225x300.jpg 225w, http://www.seanhelvey.com/wp-content/uploads/2015/09/thumb_IMG_2882_1024.jpg 768w&quot; sizes=&quot;(max-width: 225px) 100vw, 225px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Member Host Matt Beer
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I was blown away by the friendly hosts and team members from Impact Hub Berlin. Isabel, Nicole, Steph, and Jonas made me feel right at home. Matt took me out for a traditional German lunch with some awesome Hub Global folks. Vishal Jodhani is the most extraordinary community catalyst and connector that I have ever met! These people are simply amazing.&lt;/p&gt;
+
+&lt;p&gt;It was a pleasure to meet Benjamin Snow of &lt;a href=&quot;https://berlin.impacthub.net/2015/09/30/member-stories-meet-civocracy/&quot; target=&quot;_blank&quot;&gt;Civocracy.org&lt;/a&gt;, who also hails from Colorado. Brock LeMieux made an attempt at starting Impact Hub Oslo before finding his place here in Berlin, but I am hoping he comes back to Boulder at some point, as he has also spent some time in Colorado. Anula and Alexandra gave me an interesting local perspective along with some fantastic book recommendations.&lt;/p&gt;
+
+&lt;p&gt;This post is dedicated to all of the people who have started or participated in the creation of an Impact Hub around the world, even those who have failed along the way, and anyone who would consider themselves a member of the community. These places don’t exist in a vacuum. Individuals dream about creating them, but they build teams to make it happen, and work together with many different parties throughout the process (see &lt;a href=&quot;https://zurich.impacthub.ch/impact-hub-manila/&quot; target=&quot;_blank&quot;&gt;“What does it take to open an Impact Hub?”&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Thank you for allowing me to visit and tell this story! My hope is that these posts inspire people to become members and tempt existing members into visiting other locations. I’m absolutely inspired after seeing all of it and I’m sure that you will be too.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Oct 2015 02:14:09 -0600</pubDate>
+        <link>http://seanhelvey.com/impact-hub-berlin/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-berlin/</guid>
+        
+        <category>Berlin</category>
+        
+        <category>Entrepreneurship</category>
+        
+        <category>Impact</category>
+        
+        <category>Social</category>
+        
+        <category>Travel</category>
+        
+        
+        <category>Community</category>
+        
+        <category>Life</category>
+        
+        <category>Travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Impact Hub Praha</title>
+        <description>&lt;p&gt;It was impossible for me to take pictures when I first arrived in Praha (Prague). Everything was so magnificent and cohesive, that capturing any little part of it wasn’t going to do the city justice. This is a incredibly beautiful place. However, it is the people here that make it special.&lt;/p&gt;
+
+&lt;p&gt;Working at Impact Hub Praha gave me a glimpse into the heart of Czech culture. Tomas Surovcik and Jan Říha took me out to lunch, gave me advice on things to do, and helped me find a cheap bus to Munich at the end of my stay. Hosts Danka Nováková and Peter Šedivý were extremely friendly and helpful. I was also able to re-connect with Impact Hub Praha member Felix Palmer who I had met at Nordic.js in Stockholm the prior week.&lt;/p&gt;
+
+&lt;p&gt;I was blown away by the sheer size of the co-working area. It’s very large relative to other Impact Hubs I have been to, and I was told that this is the second largest in the world! The space was literally humming with energy.&lt;/p&gt;
+
+&lt;h3 id=&quot;tips-from-sean&quot;&gt;Tips from Sean&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Everyone speaks English, but why not learn some Czech? Smile and say “děkuji” instead of thank you. Locals will appreciate the effort! Hello is “ahoj” (pronounced “ahoy” like a sailor).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.google.com/ncr&quot; target=&quot;_blank&quot;&gt;www.google.com/ncr&lt;/a&gt; is a nice way to prevent google from redirecting your searches according to your geolocation. It will give you the same one from home in the language that you are used to.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tips-from-thomas&quot;&gt;Tips from Thomas&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Healthy food &lt;a href=&quot;http://www.anantasesa.cz/kontakt&quot; target=&quot;_blank&quot;&gt;http://www.anantasesa.cz/kontakt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pub with show &lt;a href=&quot;http://www.krcmabrabant.cz/kontakt_en.php&quot; target=&quot;_blank&quot;&gt;http://www.krcmabrabant.cz/kontakt_en.php&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Train models / pub &lt;a href=&quot;http://www.vytopna.cz/&quot; target=&quot;_blank&quot;&gt;http://www.vytopna.cz/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tap your own beer &lt;a href=&quot;http://www.thepub.cz/?lng=en&quot; target=&quot;_blank&quot;&gt;http://www.thepub.cz/?lng=en&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;30 different types of beer &lt;a href=&quot;http://www.praguebeermuseum.com/&quot; target=&quot;_blank&quot;&gt;http://www.praguebeermuseum.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Beautiful view of the city &lt;a href=&quot;http://towerpark.cz/en/&quot; target=&quot;_blank&quot;&gt;http://towerpark.cz/en/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tips-from-danka&quot;&gt;Tips from Danka&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Czech cuisine you must try &lt;a href=&quot;http://en.ufleku.cz/&quot; target=&quot;_blank&quot;&gt;http://en.ufleku.cz/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-can-we-learn-from-impact-hub-praha&quot;&gt;What can we learn from Impact Hub Praha?&lt;/h3&gt;
+
+&lt;p&gt;The three Impact Hubs in the Czech Republic provide members with seamless access across each of the co-working spaces. I’d love to see something like that in the states. They also have a 3D printer and a full bar / kitchen area where people pay for what they use (see the picture of money in the gallery above).&lt;/p&gt;
+
+&lt;p&gt;Thank you for the hospitality, Impact Hub Praha! I’ll never forget the experience.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Sep 2015 08:19:02 -0600</pubDate>
+        <link>http://seanhelvey.com/impact-hub-praha/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-praha/</guid>
+        
+        <category>Impact Hub</category>
+        
+        <category>Prague</category>
+        
+        <category>Praha</category>
+        
+        <category>Social Business</category>
+        
+        <category>Travel</category>
+        
+        
+        <category>Community</category>
+        
+        <category>Life</category>
+        
+        <category>Travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Nordic.js</title>
+        <description>&lt;p&gt;JavaScript is unique from other programming languages because it is used not only on the server, but within the browser. So while other languages might give you the ability to create visualizations on the front-end or develop an API on the back-end, JavaScript empowers engineers to do all of those things and much more.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_635&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2367_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-635&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2367_1024-300x225.jpg&quot; alt=&quot;We love JavaScript!&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2367_1024-300x225.jpg 300w, http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2367_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    We love JavaScript!
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Take a look at the incredible variety of topics covered on just the first day at Nordic.js:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There are no promises in node.js&lt;/li&gt;
+  &lt;li&gt;Creating Expressive UI with ReactJS&lt;/li&gt;
+  &lt;li&gt;Forgotten Funky Functions&lt;/li&gt;
+  &lt;li&gt;Bin your select tags&lt;/li&gt;
+  &lt;li&gt;Augmented reality with JavaScript&lt;/li&gt;
+  &lt;li&gt;Advanced front-end automation with npm scripts&lt;/li&gt;
+  &lt;li&gt;Through the looking glass – programming on the GPU using WebGL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each one of these talks was extremely impressive. As one of the core contributors to node.js, Bert Belder displayed a deep understanding of the history behind the project along with its implementation details. Tara Jane Feener schooled us on ReactJS, Zeno Rocha blew our minds with his work on augmented reality in the browser, and Felix Palmer put his knowledge of physics to use with his amazing talk on WebGL. My favorite talk of the day was Kate Hudson’s overview of front-end automation with npm scripts.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_638&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2370_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-638&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2370_1024-300x225.jpg&quot; alt=&quot;The stage&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2370_1024-300x225.jpg 300w, http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2370_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    The stage
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Just when I thought it couldn’t get any better, Franziska Hinkelmann started day 2 out with an enlightening “trip to the zoo” comparing different JavaScript engines. Her juxtaposition between C++ and JavaScript (below) was a show stopper, as were her tips about avoiding premature optimization and focusing only on the bottlenecks which were truly having an impact on performance.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_637&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2369_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-637&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2369_1024-300x225.jpg&quot; alt=&quot;C++ vs. JavaScript&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2369_1024-300x225.jpg 300w, http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2369_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    C++ vs. JavaScript
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The conference was full of interesting people and good vibes. We all had a ton of fun at “Festen” and the techno ping pong party. Getting a ticket wasn’t easy, but it was worth it. Hopefully we will see you all again next year!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 14 Sep 2015 06:44:13 -0600</pubDate>
+        <link>http://seanhelvey.com/nordic-js/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/nordic-js/</guid>
+        
+        <category>augmented reality</category>
+        
+        <category>Conferences</category>
+        
+        <category>GPU</category>
+        
+        <category>javascript</category>
+        
+        <category>Mobile Web</category>
+        
+        <category>node.js</category>
+        
+        <category>npm</category>
+        
+        <category>ReactJS</category>
+        
+        <category>stockholm</category>
+        
+        <category>Sweden</category>
+        
+        <category>WebGL</category>
+        
+        
+        <category>Announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Travel</title>
+        <description>&lt;p&gt;Hey everyone! Blue Hook is in Europe attending &lt;a href=&quot;http://nordicjs.com/&quot; target=&quot;_blank&quot;&gt;Nordic.js&lt;/a&gt; and &lt;a href=&quot;http://rejectjs.org/&quot; target=&quot;_blank&quot;&gt;Reject.js&lt;/a&gt; this month. Along the way I’ll be working out of several Impact Hubs and the whole journey will be documented on &lt;a href=&quot;/&quot; target=&quot;_blank&quot;&gt;my personal blog&lt;/a&gt; if you are interested in following along.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_623&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2313_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-623&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2313_1024-300x225.jpg&quot; alt=&quot;Blue Hook in Stockholm&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2313_1024-300x225.jpg 300w, /assets/images/bluehook/2015/09/thumb_IMG_2313_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Blue Hook in Stockholm
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2015 07:51:09 -0600</pubDate>
+        <link>http://seanhelvey.com/travel/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/travel/</guid>
+        
+        <category>berlin</category>
+        
+        <category>impact</category>
+        
+        <category>javascript</category>
+        
+        <category>prague</category>
+        
+        <category>stockholm</category>
+        
+        <category>travel</category>
+        
+        
+        <category>Announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Impact Hub Stockholm</title>
+        <description>&lt;p&gt;Travel to a place where you know nobody and instantly become part of the community there. That’s the experience that I had visiting Stockholm and using the Impact Hub Passport! Everyone from the founder to the hosts and members were extremely friendly and collaborative. This has been the first stop on my journey which will take me to 3 (now 4) hubs in Europe, so it will always have a special place in my heart.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1017&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-1017 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg&quot; alt=&quot;thumb_IMG_2313_1024&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg 300w, /assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Visiting Hubbers
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The space here is incredible and they have interesting ways of getting members involved with leadership. Their “Community Hosts” volunteer one day per week to earn their membership and they have “Member Hosts” who provide expertise in a particular area such as marketing or IT. They also have &lt;a href=&quot;http://stockholm.impacthub.net/member-clubs/&quot; target=&quot;_blank&quot;&gt;member lead events&lt;/a&gt; like climbing and running groups each week.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-makes-impact-hub-stockholm-unique&quot;&gt;What makes Impact Hub Stockholm unique?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Members from Israel, Belgium, France, Germany, Bulgaria, Sweden, etc.&lt;/li&gt;
+  &lt;li&gt;They were open before the first HUB in Islington.&lt;/li&gt;
+  &lt;li&gt;WikiLeaks founder Julian Assange has actually slept at Impact Hub Stockholm.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The highlight of the trip for me personally was working with Anton Håkansson &amp;amp; Simon Olander Sahlén on their app &lt;a href=&quot;https://www.daycape.com/&quot; target=&quot;_blank&quot;&gt;DayCape&lt;/a&gt;, a digital image calendar for children with autism. We hacked on Objective-C together, as they had recently lost their iOS developer.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_941&quot; style=&quot;width: 235px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-941 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg&quot; alt=&quot;thumb_IMG_2224_1024&quot; width=&quot;225&quot; height=&quot;300&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg 225w, /assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg 768w&quot; sizes=&quot;(max-width: 225px) 100vw, 225px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Anton &amp;amp; Simon
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Thank you for the hospitality everyone! The WineDown was really fun and I had a great time going to the climbing gym with the group. I formed some lifelong friendships during my brief time here in Sweden. I’ll be back, but I hope to see you all in Boulder at some point.&lt;/p&gt;
+
+&lt;h3 id=&quot;tips&quot;&gt;Tips&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check out the fancy adjustable desks. They are awesome.&lt;/li&gt;
+  &lt;li&gt;Members gather every day around noon for lunch. Join them!&lt;/li&gt;
+  &lt;li&gt;Don’t be intimidated by the language. Everyone speaks English.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2015 06:58:15 -0600</pubDate>
+        <link>http://seanhelvey.com/impact-hub-stockholm/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-stockholm/</guid>
+        
+        <category>Boulder</category>
+        
+        <category>Colorado</category>
+        
+        <category>Community</category>
+        
+        <category>Impact</category>
+        
+        <category>Stockholm</category>
+        
+        <category>Sweden</category>
+        
+        <category>Travel</category>
+        
+        
+        <category>Community</category>
+        
+        <category>Life</category>
+        
+        <category>Travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Impact Hub Adventure</title>
+        <description>&lt;p&gt;As I’ve said &lt;a href=&quot;http://www.seanhelvey.com/cross-pollination/&quot; target=&quot;_blank&quot;&gt;before&lt;/a&gt;, I love being a member of Impact Hub Boulder. The incredible people there inspire me every day. However, it’s time for a new adventure. I’m off to Europe!&lt;/p&gt;
+
+&lt;p&gt;I’ve decided to spend the month of September exploring other Impact Hubs. I want to set an example for members, encourage collaboration across borders, and raise awareness around the Impact Hub Passport. The Impact Hub Passport is currently being redesigned to allow members to move between different hubs with greater ease.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_911&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/08/map.png&quot;&gt;&lt;img src=&quot;/assets/images/seanhelvey/2015/08/map-300x234.png&quot; alt=&quot;Hubs on the route&quot; width=&quot;300&quot; height=&quot;234&quot; class=&quot;size-medium wp-image-911&quot; srcset=&quot;/assets/images/seanhelvey/2015/08/map-300x234.png 300w, /assets/images/seanhelvey/2015/08/map-1024x797.png 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Hubs on the route
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’ll be starting out in Stockholm, passing through Berlin, and finishing in San Sebastian. There will be other stops along the way too! (Munich, Prague, Vienna..?) Let me know if you or any of your nerd friends will be attending &lt;a href=&quot;http://nordicjs.com/&quot; target=&quot;_blank&quot;&gt;Nordic.js&lt;/a&gt; or &lt;a href=&quot;http://rejectjs.org/&quot; target=&quot;_blank&quot;&gt;Reject.js&lt;/a&gt;, as I’ll be going to both JavaScript conferences.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_915&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/08/w_greg.jpg&quot;&gt;&lt;img src=&quot;/assets/images/seanhelvey/2015/08/w_greg-300x225.jpg&quot; alt=&quot;Impact Hub Boulder&quot; width=&quot;300&quot; height=&quot;225&quot; class=&quot;size-medium wp-image-915&quot; srcset=&quot;/assets/images/seanhelvey/2015/08/w_greg-300x225.jpg 300w, /assets/images/seanhelvey/2015/08/w_greg.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Impact Hub Boulder
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The trip was inspired by &lt;a href=&quot;http://www.impacthub.net/2014/06/14/impact-hub-global-network-effect/&quot; target=&quot;_blank&quot;&gt;this fantastic post&lt;/a&gt; from Brian Howe and conversations with Matthias Reisinger, who is leading the effort on the new passport program. Greg Berry, Shannon Sunderland, and Lindsey Brown have encouraged and supported me. Thanks to them, I’ll have Impact Hub Boulder gifts and plenty of good vibes to bring with me on my journey.&lt;/p&gt;
+
+&lt;p&gt;Please come and say hello if you see me at your hub! Stay tuned for more posts.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Aug 2015 08:31:09 -0600</pubDate>
+        <link>http://seanhelvey.com/impact-hub-adventure/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-adventure/</guid>
+        
+        <category>Abroad</category>
+        
+        <category>Boulder</category>
+        
+        <category>Impact Hub</category>
+        
+        <category>Stockholm</category>
+        
+        <category>Travel</category>
+        
+        
+        <category>Community</category>
+        
+        <category>Life</category>
+        
+        <category>Travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Northern Colorado Value Investing Meetup</title>
+        <description>&lt;p&gt;I’m speaking on the value investing newsletter &lt;a href=&quot;http://www.valunicorn.me/&quot;&gt;Valunicorn&lt;/a&gt; at the next Northern Colorado Value Investing Meetup “Q2 2015”. Register &lt;a href=&quot;http://www.meetup.com/Northern-Colorado-Value-Investing-Meetup/events/222655239/&quot;&gt;here&lt;/a&gt;. The meeting will take place beginning at 8:15 AM Sat Jun 27 @ La Vita Bella Coffee in Longmont. Hope to see you there!&lt;/p&gt;
+
+&lt;div id=&quot;attachment_886&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/06/finalcorn.png&quot;&gt;&lt;img class=&quot;size-medium wp-image-886&quot; src=&quot;/assets/images/seanhelvey/2015/06/finalcorn-300x300.png&quot; alt=&quot;Valunicorn&quot; width=&quot;300&quot; height=&quot;300&quot; srcset=&quot;/assets/images/seanhelvey/2015/06/finalcorn-300x300.png 300w, /assets/images/seanhelvey/2015/06/finalcorn-150x150.png 150w, /assets/images/seanhelvey/2015/06/finalcorn-1024x1021.png 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Valunicorn helps you purchase the most reliable dividend paying stocks at the right time.
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 18 Jun 2015 13:53:06 -0600</pubDate>
+        <link>http://seanhelvey.com/northern-colorado-value-investing-meetup/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/northern-colorado-value-investing-meetup/</guid>
+        
+        <category>buffett</category>
+        
+        <category>dividends</category>
+        
+        <category>graham</category>
+        
+        <category>income</category>
+        
+        <category>investing</category>
+        
+        <category>newsletter</category>
+        
+        <category>stocks</category>
+        
+        <category>value</category>
+        
+        
+        <category>Business</category>
+        
+        <category>Finance</category>
+        
+      </item>
+    
+      <item>
+        <title>Cross-pollination</title>
+        <description>&lt;p&gt;I love being a member of &lt;a href=&quot;http://www.impacthubboulder.com/&quot; target=&quot;_blank&quot;&gt;Impact HUB Boulder&lt;/a&gt;! The community here has helped me grow both personally and professionally. While my experience locally has been amazing, I know that there is more out there, and have put together a letter in anticipation of a stay in Europe this fall. A few members of the leadership team will be passing this along to other Impact HUB directors at gatherings over the coming months:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Greetings!&lt;/p&gt;
+
+  &lt;p&gt;My name is Sean Helvey and I am a member of Impact HUB Boulder. I’d like to spend some time abroad this fall, and while working at another Impact HUB sounds fantastic to me, we might be able to craft the journey in a way that would benefit every one of our members. Let’s take this as an opportunity to promote the Impact HUB Passport and increase the interconnectedness of our network.&lt;/p&gt;
+
+  &lt;p&gt;I’ll happily serve as an ambassador for Boulder, bringing back pictures and stories of people that I meet along the way. This could lead to a more robust infrastructure for would-be travelers looking to rent a room and work at another Impact HUB. We ought to have a series of blog posts dedicated to Impact HUB Global and members who transcend borders in search of a different perspective. We can collaborate and encourage this cross-pollination.&lt;/p&gt;
+
+  &lt;p&gt;I’ll only be able to visit one continent this fall (probably Europe). However, I am hopeful that this will lead to other visits in the future, possibly including South America and Asia during 2016. I speak a little bit of Spanish, and am very interested in Central and Northern Europe. The biggest challenge is finding a group of people who have the capacity and are receptive to having a guest. I work remotely as a &lt;a href=&quot;http://www.seanhelvey.com/about/&quot;&gt;Software Developer&lt;/a&gt; for one main client in Denver at the moment and spend my free time teaching kids programming as a Champion of &lt;a href=&quot;https://coderdojo.com/&quot;&gt;CoderDojo&lt;/a&gt; Boulder.&lt;/p&gt;
+
+  &lt;p&gt;Thank you for taking the time to read this! I haven’t purchased a flight or rented an apartment yet, so please reach out if you have any input. Let’s work together to foster the global community that is ImpactHUB by supporting members who travel and work abroad.&lt;/p&gt;
+
+  &lt;p&gt;Looking forward to meeting you,&lt;/p&gt;
+
+  &lt;p&gt;Sean Helvey&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ll follow up with another post once the details of the trip emerge, so please stay tuned!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 May 2015 08:30:43 -0600</pubDate>
+        <link>http://seanhelvey.com/cross-pollination/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/cross-pollination/</guid>
+        
+        
+        <category>Business</category>
+        
+        <category>Community</category>
+        
+        <category>Entrepreneurship</category>
+        
+        <category>Life</category>
+        
+        <category>Travel</category>
+        
+      </item>
+    
+      <item>
+        <title>PhantomJS failed 2 times (timeout). Giving up.</title>
+        <description>&lt;p&gt;Giving up? There is no giving up in Node.js! Come on..&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Running “karma:unit” (karma) task&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ERROR [launcher]: PhantomJS failed 2 times (timeout). Giving up.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Warning: Task “karma:unit” failed. Use –force to continue.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Scouring over Stack Overflow has gotten you nowhere. Your pals on IRC haven’t come up with a solution either. You have blown away your whole Node environment, upgraded certain dependencies, and downgraded other packages. What is the solution?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p class=&quot;p1&quot;&gt;
+  nvm install 0.12.0&lt;br /&gt; nvm use 0.12.0
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;p1&quot;&gt;
+  Looks like certain versions of Node.js prior to 0.12.0 caused issues between Karma and PhantomJS. Upgrade to the latest stable version and you should be good to go.
+&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Mar 2015 19:51:11 -0600</pubDate>
+        <link>http://seanhelvey.com/phantomjs-failed-2-times-timeout-giving-up/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/phantomjs-failed-2-times-timeout-giving-up/</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>Karma</category>
+        
+        <category>Node</category>
+        
+        <category>Node.js</category>
+        
+        <category>PhantomJS</category>
+        
+        
+        <category>Libraries and Frameworks</category>
+        
+        <category>Technology</category>
+        
+      </item>
+    
+  </channel>
+</rss>
