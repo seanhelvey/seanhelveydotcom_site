@@ -458,4 +458,5 @@ pre {
 
 .wp-caption, .aligncenter, img {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  max-width: 100%; }
