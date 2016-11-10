@@ -6,9 +6,28 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Sep 2016 14:58:13 -0600</pubDate>
-    <lastBuildDate>Thu, 29 Sep 2016 14:58:13 -0600</lastBuildDate>
+    <pubDate>Thu, 10 Nov 2016 13:32:54 -0700</pubDate>
+    <lastBuildDate>Thu, 10 Nov 2016 13:32:54 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Life Update</title>
+        <description>&lt;p&gt;After nearly 3 years of consulting, I am excited to announce that I have accepted a full-time job with Pearson! The assessments group here in Boulder does a ton of interesting machine learning and natural language processing, so this is going to be a tremendous learning experience.&lt;/p&gt;
+
+&lt;p&gt;I have also been taking a Scala class and learning Elm over the last several months. Huge thanks to &lt;a href=&quot;http://degoes.net/&quot; target=&quot;_blank&quot;&gt;John DeGoes&lt;/a&gt; for generously donating his time and everyone in the Elm community for helping me get up to speed. I gained some exposure to classical functional languages and lambda calculus in grad school, but have done basic web development with dynamically typed scripting languages since graduating in 2012.&lt;/p&gt;
+
+&lt;p&gt;What does all of this mean? Expect a flurry of blog posts about things that I don’t understand very well! These aren’t going to be super useful if the topic is in an area where you have expertise. They may be helpful for others who happen to be at the same level. Most importantly though, I want to get back in the habit of writing as I learn. Thanks in advance for understanding!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 Nov 2016 00:00:00 -0700</pubDate>
+        <link>http://seanhelvey.com/life-update/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/life-update/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -461,55 +480,6 @@
         <category>Life</category>
         
         <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>PhantomJS failed 2 times (timeout). Giving up.</title>
-        <description>&lt;p&gt;Giving up? There is no giving up in Node.js! Come on..&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Running “karma:unit” (karma) task&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ERROR [launcher]: PhantomJS failed 2 times (timeout). Giving up.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Warning: Task “karma:unit” failed. Use –force to continue.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Scouring over Stack Overflow has gotten you nowhere. Your pals on IRC haven’t come up with a solution either. You have blown away your whole Node environment, upgraded certain dependencies, and downgraded other packages. What is the solution?&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p class=&quot;p1&quot;&gt;
-  nvm install 0.12.0&lt;br /&gt; nvm use 0.12.0
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p class=&quot;p1&quot;&gt;
-  Looks like certain versions of Node.js prior to 0.12.0 caused issues between Karma and PhantomJS. Upgrade to the latest stable version and you should be good to go.
-&lt;/p&gt;
-</description>
-        <pubDate>Tue, 24 Mar 2015 19:51:11 -0600</pubDate>
-        <link>http://seanhelvey.com/phantomjs-failed-2-times-timeout-giving-up/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/phantomjs-failed-2-times-timeout-giving-up/</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>Karma</category>
-        
-        <category>Node</category>
-        
-        <category>Node.js</category>
-        
-        <category>PhantomJS</category>
-        
-        
-        <category>Libraries and Frameworks</category>
-        
-        <category>Technology</category>
         
       </item>
     
