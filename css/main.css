@@ -460,3 +460,7 @@ pre {
   margin: 0 auto;
   text-align: center;
   max-width: 100%; }
+
+.sean-blog-image {
+  text-align: center;
+  margin: 10%; }
