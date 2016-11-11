@@ -6,9 +6,65 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Nov 2016 10:05:29 -0700</pubDate>
-    <lastBuildDate>Fri, 11 Nov 2016 10:05:29 -0700</lastBuildDate>
+    <pubDate>Fri, 11 Nov 2016 15:28:27 -0700</pubDate>
+    <lastBuildDate>Fri, 11 Nov 2016 15:28:27 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>5 Reasons Interest Rates Are Rising</title>
+        <description>&lt;div class=&quot;sean-blog-image&quot;&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;/assets/images/seanhelvey/2016/11/mr_toads_wild_ride_pin005.png&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Wild Ride&quot; class=&quot; lazyloaded&quot; src=&quot;/assets/images/seanhelvey/2016/11/mr_toads_wild_ride_pin005.png&quot; /&gt;
+    &lt;/a&gt;
+  &lt;figcaption&gt;
+    Money in the bank or under the mattress, it turns out, may not be that safe after all.
+  &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mr. Toad’s Wild Ride is one of the few remaining original attractions at Disneyland Park. It is a wild adventure full of mayhem and havoc. Heading into this new era of economic policy feels like one of the ride’s hallmark hairpin turns. Unpredictable policy, deficit spending, and reduced foreign demand for treasuries are causing interest rates to increase. An increase in borrowing costs and a higher return on cash will prolong the rise in interest rates by slowing the economy and reducing income tax revenue. A quick tour of Mr. Trump’s Wild Ride leads me to the conclusion that interest rates are rising because of these five simple reasons.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;unpredictable-policy&quot;&gt;Unpredictable policy&lt;/h3&gt;
+&lt;p&gt;Uncertainty in the markets takes the form of volatility, which has a negative correlation with asset prices. Given the inverse relationship between interest rates and price, an increase in volatility will coincide with an increase in interest rates.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;deficit-spending&quot;&gt;Deficit spending&lt;/h3&gt;
+&lt;p&gt;Let’s say hypothetically that an increase in military spending will be offset by recuded healthcare expenditures. Still, the increased infrastructure spending will have to come from somewhere. This will likely be funded with debt. An increase in the supply of debt reduces the price, which leads to an increase in interest rates.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;reduced-foreign-demand-for-treasuries&quot;&gt;Reduced foreign demand for treasuries&lt;/h3&gt;
+&lt;p&gt;We own most of our own debt through the social security trust fund and federal reserve, so renegotating US debt would not fix anything. Our largest international creditors, China and Japan, have other options. They will continue to reduce their demand for treasures as US credit worthiness deteriorates. Reduced demand leads to lower prices and higher interest rates.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;increased-borrowing-costs&quot;&gt;Increased borrowing costs&lt;/h3&gt;
+&lt;p&gt;As interest rates on government debt increase, so will interest rates on corporate bonds. Both residential and commercial mortgage rates will increase as well. Purchasing assets becomes more difficult as borrowing costs increase.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;higher-returns-on-cash&quot;&gt;Higher returns on cash&lt;/h3&gt;
+&lt;p&gt;As the period of near-zero interest rates comes to an end, the incentive to save money and earn high interest rates will return. While higher returns on cash may seem like a good thing, it comes at the cost of reduced investment.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Increased volatility, greater supply, and lower demand for treasuries are causing interest rates to increase. An increase in borrowing costs and a higher return on cash will perpetuate the rise in interest rates by slowing down economic growth and lowering income tax revenue. What is an investor to do?&lt;/p&gt;
+
+&lt;p&gt;The current economic outlook presents us with a conundrum. While banks may benefit from higher interest rates, weak economic growth will offset that to some degree. Whether or not the US actually defaults on its debt, we will certainly see panics and crashes over the next couple of years. Ratings agency downgrades, bank-runs, and capital controls combined with the factors outlined above will make it difficult for people to trust banks and take advantage of higher interest rates, while money under the mattress could lose value due to currency depreciation and associated inflationary pressures.&lt;/p&gt;
+
+&lt;p&gt;My personal reccomendation would be to purchase high quality stocks when market prices drop. This approach will provide you with a stable stream of growing dividend payments. You can subscribe to my newsletter &lt;a href=&quot;http://www.valunicorn.me/&quot;&gt;Valunicorn&lt;/a&gt; for free during 2016 and remain grandfathered in for life! Whatever you decide, be prepared for a period of rising interest rates due to the five simple reasons outlined above.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 11 Nov 2016 14:00:00 -0700</pubDate>
+        <link>http://seanhelvey.com/5-reasons-interest-rates-are-rising/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/5-reasons-interest-rates-are-rising/</guid>
+        
+        
+      </item>
     
       <item>
         <title>How to EC2</title>
@@ -50,7 +106,7 @@
 
 &lt;p&gt;The only remaining gotcha has to do with your Routes Tables and Internet Gateways, but it is well documented in this trouble shooting guide provided by Amazon: &lt;a href=&quot;https://aws.amazon.com/premiumsupport/knowledge-center/ec2-linux-ssh-troubleshooting/&quot;&gt;How do I troubleshoot problems connecting to my EC2 Linux instance using SSH?&lt;/a&gt; Once you have completed those steps, you should be able to connect to your shiny new EC2 instance!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 Nov 2016 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 11 Nov 2016 09:00:00 -0700</pubDate>
         <link>http://seanhelvey.com/how-to-ec2/</link>
         <guid isPermaLink="true">http://seanhelvey.com/how-to-ec2/</guid>
         
@@ -449,45 +505,6 @@
         <category>Life</category>
         
         <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Northern Colorado Value Investing Meetup</title>
-        <description>&lt;p&gt;I’m speaking on the value investing newsletter &lt;a href=&quot;http://www.valunicorn.me/&quot;&gt;Valunicorn&lt;/a&gt; at the next Northern Colorado Value Investing Meetup “Q2 2015”. Register &lt;a href=&quot;http://www.meetup.com/Northern-Colorado-Value-Investing-Meetup/events/222655239/&quot;&gt;here&lt;/a&gt;. The meeting will take place beginning at 8:15 AM Sat Jun 27 @ La Vita Bella Coffee in Longmont. Hope to see you there!&lt;/p&gt;
-
-&lt;div id=&quot;attachment_886&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/seanhelvey/2015/06/finalcorn.png&quot;&gt;&lt;img class=&quot;size-medium wp-image-886&quot; src=&quot;/assets/images/seanhelvey/2015/06/finalcorn-300x300.png&quot; alt=&quot;Valunicorn&quot; width=&quot;300&quot; height=&quot;300&quot; srcset=&quot;/assets/images/seanhelvey/2015/06/finalcorn-300x300.png 300w, /assets/images/seanhelvey/2015/06/finalcorn-150x150.png 150w, /assets/images/seanhelvey/2015/06/finalcorn-1024x1021.png 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Valunicorn helps you purchase the most reliable dividend paying stocks at the right time.
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 18 Jun 2015 13:53:06 -0600</pubDate>
-        <link>http://seanhelvey.com/northern-colorado-value-investing-meetup/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/northern-colorado-value-investing-meetup/</guid>
-        
-        <category>buffett</category>
-        
-        <category>dividends</category>
-        
-        <category>graham</category>
-        
-        <category>income</category>
-        
-        <category>investing</category>
-        
-        <category>newsletter</category>
-        
-        <category>stocks</category>
-        
-        <category>value</category>
-        
-        
-        <category>Business</category>
-        
-        <category>Finance</category>
         
       </item>
     
