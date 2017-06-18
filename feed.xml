@@ -6,9 +6,133 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Feb 2017 15:58:57 -0700</pubDate>
-    <lastBuildDate>Sun, 12 Feb 2017 15:58:57 -0700</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <pubDate>Sun, 18 Jun 2017 09:20:50 -0600</pubDate>
+    <lastBuildDate>Sun, 18 Jun 2017 09:20:50 -0600</lastBuildDate>
+    <generator>Jekyll v3.4.4</generator>
+    
+      <item>
+        <title>Go is Not Python</title>
+        <description>&lt;p&gt;You know Python fairly well, but your manger wants to start using Go “because it is faster”. Being the overacheiver that you are, you sacrifice time from your precious weekend to figure out the basics. Take a trivial Python program like this for instance:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def main():
+
+  students = [
+    {
+      &quot;name&quot;: &quot;fred&quot;
+    },
+    {
+      &quot;name&quot;: &quot;karen&quot;
+    }
+  ]
+
+  for student in students:
+    if student['name'] == &quot;fred&quot;:
+      fred = student
+
+  print fred['name']
+
+if __name__=='__main__':
+  main()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What is the output of that program?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt; python for_loop.py
+&amp;gt;&amp;gt; fred
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Fred! Of course. An if statement, a for loop. Let’s port it to go:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package main
+
+import &quot;fmt&quot;
+
+type Student struct {
+    name string
+}
+
+func main() {
+    var students [2]Student
+    students[0].name = &quot;fred&quot;
+    students[1].name = &quot;karen&quot;
+
+    var fredPtr *Student
+    fredPtr = nil
+
+    for _, student := range students {
+        if student.name == &quot;fred&quot; {
+          fredPtr = &amp;amp;student
+        }
+    }
+
+    fmt.Println(fredPtr.name)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What is the output of that program?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt; go run for-loop.go 
+&amp;gt;&amp;gt; karen
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;width: 410px&quot; class=&quot;wp-caption alignnone&quot;&gt;
+  &lt;a href=&quot;https://media1.giphy.com/media/ma7VlDSlty3EA/giphy.gif&quot;&gt;&lt;img alt=&quot;Confused&quot; src=&quot;https://media1.giphy.com/media/ma7VlDSlty3EA/giphy.gif&quot; height=&quot;224&quot; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Huh?
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’ve used a funny gif here to get my point across, but the impact of this misunderstanding can be severe. The value property of range (stored here as student) is a copy of the value from students, not a pointer to the value in students. See &lt;a href=&quot;https://github.com/golang/go/wiki/Range#gotchas&quot;&gt;golang Range Gotchas on GitHub&lt;/a&gt; and &lt;a href=&quot;https://tour.golang.org/moretypes/16&quot;&gt;A Tour of Go - Range&lt;/a&gt; for more info.&lt;/p&gt;
+
+&lt;div style=&quot;width: 800px&quot; class=&quot;wp-caption alignnone&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2017/GolangRange1.png&quot;&gt;&lt;img alt=&quot;Confused&quot; src=&quot;/assets/images/seanhelvey/2017/GolangRange1.png&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;width: 800px&quot; class=&quot;wp-caption alignnone&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2017/GolangRange2.png&quot;&gt;&lt;img alt=&quot;Confused&quot; src=&quot;/assets/images/seanhelvey/2017/GolangRange2.png&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The solution: we have to store a pointer to the value in students, rather than a pointer to the copy of the value from students.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package main
+
+import &quot;fmt&quot;
+
+type Student struct {
+    name string
+}
+
+func main() {
+    var students [2]Student
+    students[0].name = &quot;fred&quot;
+    students[1].name = &quot;karen&quot;
+
+    var fredPtr *Student
+    fredPtr = nil
+
+    for idx, student := range students {
+        if student.name == &quot;fred&quot; {
+          fredPtr = &amp;amp;students[idx]
+        }
+    }
+
+    fmt.Println(fredPtr.name)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;I’ve seen serious bugs in production written by bright Python developers because of this misunderstanding. Go is not Python!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
+        <link>http://seanhelvey.com/go-is-not-python/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/go-is-not-python/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Calling All Landlocked Surfers</title>
@@ -31,7 +155,7 @@
     &lt;a href=&quot;/assets/images/seanhelvey/2017/encino.gif&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;EC2 Instances&quot; class=&quot; lazyloaded&quot; src=&quot;/assets/images/seanhelvey/2017/encino.gif&quot; /&gt;
     &lt;/a&gt;
   &lt;figcaption&gt;
-    If you&#39;re edged &#39;cause I&#39;m weazin all your grindage, just chill.
+    If you're edged 'cause I'm weazin all your grindage, just chill.
   &lt;/figcaption&gt;
   &lt;/figure&gt;
 &lt;/div&gt;
@@ -178,8 +302,8 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
@@ -420,75 +544,6 @@
         
         
         <category>Announcements</category>
-        
-      </item>
-    
-      <item>
-        <title>Impact Hub Stockholm</title>
-        <description>&lt;p&gt;Travel to a place where you know nobody and instantly become part of the community there. That’s the experience that I had visiting Stockholm and using the Impact Hub Passport! Everyone from the founder to the hosts and members were extremely friendly and collaborative. This has been the first stop on my journey which will take me to 3 (now 4) hubs in Europe, so it will always have a special place in my heart.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_1017&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-1017 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg&quot; alt=&quot;thumb_IMG_2313_1024&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg 300w, /assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Visiting Hubbers
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The space here is incredible and they have interesting ways of getting members involved with leadership. Their “Community Hosts” volunteer one day per week to earn their membership and they have “Member Hosts” who provide expertise in a particular area such as marketing or IT. They also have &lt;a href=&quot;http://stockholm.impacthub.net/member-clubs/&quot; target=&quot;_blank&quot;&gt;member lead events&lt;/a&gt; like climbing and running groups each week.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-makes-impact-hub-stockholm-unique&quot;&gt;What makes Impact Hub Stockholm unique?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Members from Israel, Belgium, France, Germany, Bulgaria, Sweden, etc.&lt;/li&gt;
-  &lt;li&gt;They were open before the first HUB in Islington.&lt;/li&gt;
-  &lt;li&gt;WikiLeaks founder Julian Assange has actually slept at Impact Hub Stockholm.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The highlight of the trip for me personally was working with Anton Håkansson &amp;amp; Simon Olander Sahlén on their app &lt;a href=&quot;https://www.daycape.com/&quot; target=&quot;_blank&quot;&gt;DayCape&lt;/a&gt;, a digital image calendar for children with autism. We hacked on Objective-C together, as they had recently lost their iOS developer.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_941&quot; style=&quot;width: 235px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-941 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg&quot; alt=&quot;thumb_IMG_2224_1024&quot; width=&quot;225&quot; height=&quot;300&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg 225w, /assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg 768w&quot; sizes=&quot;(max-width: 225px) 100vw, 225px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Anton &amp;amp; Simon
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Thank you for the hospitality everyone! The WineDown was really fun and I had a great time going to the climbing gym with the group. I formed some lifelong friendships during my brief time here in Sweden. I’ll be back, but I hope to see you all in Boulder at some point.&lt;/p&gt;
-
-&lt;h3 id=&quot;tips&quot;&gt;Tips&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Check out the fancy adjustable desks. They are awesome.&lt;/li&gt;
-  &lt;li&gt;Members gather every day around noon for lunch. Join them!&lt;/li&gt;
-  &lt;li&gt;Don’t be intimidated by the language. Everyone speaks English.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 09 Sep 2015 06:58:15 -0600</pubDate>
-        <link>http://seanhelvey.com/impact-hub-stockholm/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-stockholm/</guid>
-        
-        <category>Boulder</category>
-        
-        <category>Colorado</category>
-        
-        <category>Community</category>
-        
-        <category>Impact</category>
-        
-        <category>Stockholm</category>
-        
-        <category>Sweden</category>
-        
-        <category>Travel</category>
-        
-        
-        <category>Community</category>
-        
-        <category>Life</category>
-        
-        <category>Travel</category>
         
       </item>
     
