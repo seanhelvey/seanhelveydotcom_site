@@ -6,8 +6,8 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Jun 2017 09:20:50 -0600</pubDate>
-    <lastBuildDate>Sun, 18 Jun 2017 09:20:50 -0600</lastBuildDate>
+    <pubDate>Sun, 30 Jul 2017 09:26:53 -0600</pubDate>
+    <lastBuildDate>Sun, 30 Jul 2017 09:26:53 -0600</lastBuildDate>
     <generator>Jekyll v3.4.4</generator>
     
       <item>
@@ -273,25 +273,6 @@ func main() {
       </item>
     
       <item>
-        <title>Life Update</title>
-        <description>&lt;p&gt;After nearly 3 years of consulting, I am excited to announce that I have accepted a full-time job with Pearson! The assessments group here in Boulder does a ton of interesting machine learning and natural language processing, so this is going to be a tremendous learning experience.&lt;/p&gt;
-
-&lt;p&gt;I have also been taking a Scala class and learning Elm over the last several months. Huge thanks to &lt;a href=&quot;http://degoes.net/&quot; target=&quot;_blank&quot;&gt;John DeGoes&lt;/a&gt; for generously donating his time and everyone in the Elm community for helping me get up to speed. I gained some exposure to classical functional languages and lambda calculus in grad school, but have done basic web development with dynamically typed scripting languages since graduating in 2012.&lt;/p&gt;
-
-&lt;p&gt;What does all of this mean? Expect a flurry of blog posts about things that I don’t understand very well! These aren’t going to be super useful if the topic is in an area where you have expertise. They may be helpful for others who happen to be at the same level. Most importantly though, I want to get back in the habit of writing as I learn. Thanks in advance for understanding!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 10 Nov 2016 00:00:00 -0700</pubDate>
-        <link>http://seanhelvey.com/life-update/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/life-update/</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
         <title>Welcome to Jekyll!</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
@@ -544,6 +525,75 @@ func main() {
         
         
         <category>Announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Impact Hub Stockholm</title>
+        <description>&lt;p&gt;Travel to a place where you know nobody and instantly become part of the community there. That’s the experience that I had visiting Stockholm and using the Impact Hub Passport! Everyone from the founder to the hosts and members were extremely friendly and collaborative. This has been the first stop on my journey which will take me to 3 (now 4) hubs in Europe, so it will always have a special place in my heart.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1017&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-1017 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg&quot; alt=&quot;thumb_IMG_2313_1024&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg 300w, /assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Visiting Hubbers
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The space here is incredible and they have interesting ways of getting members involved with leadership. Their “Community Hosts” volunteer one day per week to earn their membership and they have “Member Hosts” who provide expertise in a particular area such as marketing or IT. They also have &lt;a href=&quot;http://stockholm.impacthub.net/member-clubs/&quot; target=&quot;_blank&quot;&gt;member lead events&lt;/a&gt; like climbing and running groups each week.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-makes-impact-hub-stockholm-unique&quot;&gt;What makes Impact Hub Stockholm unique?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Members from Israel, Belgium, France, Germany, Bulgaria, Sweden, etc.&lt;/li&gt;
+  &lt;li&gt;They were open before the first HUB in Islington.&lt;/li&gt;
+  &lt;li&gt;WikiLeaks founder Julian Assange has actually slept at Impact Hub Stockholm.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The highlight of the trip for me personally was working with Anton Håkansson &amp;amp; Simon Olander Sahlén on their app &lt;a href=&quot;https://www.daycape.com/&quot; target=&quot;_blank&quot;&gt;DayCape&lt;/a&gt;, a digital image calendar for children with autism. We hacked on Objective-C together, as they had recently lost their iOS developer.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_941&quot; style=&quot;width: 235px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-941 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg&quot; alt=&quot;thumb_IMG_2224_1024&quot; width=&quot;225&quot; height=&quot;300&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg 225w, /assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg 768w&quot; sizes=&quot;(max-width: 225px) 100vw, 225px&quot; /&gt;&lt;/a&gt;
+
+  &lt;p class=&quot;wp-caption-text&quot;&gt;
+    Anton &amp;amp; Simon
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Thank you for the hospitality everyone! The WineDown was really fun and I had a great time going to the climbing gym with the group. I formed some lifelong friendships during my brief time here in Sweden. I’ll be back, but I hope to see you all in Boulder at some point.&lt;/p&gt;
+
+&lt;h3 id=&quot;tips&quot;&gt;Tips&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check out the fancy adjustable desks. They are awesome.&lt;/li&gt;
+  &lt;li&gt;Members gather every day around noon for lunch. Join them!&lt;/li&gt;
+  &lt;li&gt;Don’t be intimidated by the language. Everyone speaks English.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2015 06:58:15 -0600</pubDate>
+        <link>http://seanhelvey.com/impact-hub-stockholm/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-stockholm/</guid>
+        
+        <category>Boulder</category>
+        
+        <category>Colorado</category>
+        
+        <category>Community</category>
+        
+        <category>Impact</category>
+        
+        <category>Stockholm</category>
+        
+        <category>Sweden</category>
+        
+        <category>Travel</category>
+        
+        
+        <category>Community</category>
+        
+        <category>Life</category>
+        
+        <category>Travel</category>
         
       </item>
     
