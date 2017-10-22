@@ -6,8 +6,8 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Oct 2017 19:19:20 -0600</pubDate>
-    <lastBuildDate>Sat, 21 Oct 2017 19:19:20 -0600</lastBuildDate>
+    <pubDate>Sat, 21 Oct 2017 19:27:07 -0600</pubDate>
+    <lastBuildDate>Sat, 21 Oct 2017 19:27:07 -0600</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -52,7 +52,7 @@ A: “Try scanl.”&lt;/p&gt;
 &lt;h2 id=&quot;give-back-to-the-community&quot;&gt;Give back to the community&lt;/h2&gt;
 &lt;p&gt;I cannot tell you how grateful I am for the incredible community of functional programmers. Do not be afraid of your zealot co-worker who tells you that Haskell is better than Python and they can prove it (hi &lt;a href=&quot;https://twitter.com/puffnfresh&quot;&gt;@puffnfresh&lt;/a&gt;). They are trying to help you! Let’s be honest - the terminology and pretense around functional programming can be off-putting to some beginners. It’s ok.&lt;/p&gt;
 
-&lt;p&gt;Soon you will find that these people are unbelievably generous and friendly. They are organizing conferences, teaching free classes, writing blog posts, and helping beginners in Slack channels. These people are legitimately trying to make the world a better place. The least that we can do as beginners is attempt to give back in the same way.&lt;/p&gt;
+&lt;p&gt;Soon you will find that the functional programming community is unbelievably generous and friendly. They are organizing conferences, teaching free classes, writing blog posts, and helping beginners in Slack channels. These people are legitimately trying to make the world a better place. The least that we can do as beginners is attempt to give back in the same way.&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Oct 2017 00:00:00 -0600</pubDate>
         <link>http://seanhelvey.com/tips-from-an-fp-noob/</link>
