@@ -6,15 +6,66 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Jul 2017 09:26:53 -0600</pubDate>
-    <lastBuildDate>Sun, 30 Jul 2017 09:26:53 -0600</lastBuildDate>
-    <generator>Jekyll v3.4.4</generator>
+    <pubDate>Sat, 21 Oct 2017 19:19:20 -0600</pubDate>
+    <lastBuildDate>Sat, 21 Oct 2017 19:19:20 -0600</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Tips From an FP Noob</title>
+        <description>&lt;p&gt;Functional programming is amazing! Huge thanks to the professors, colleagues, and friends who have helped me appreciate that. In this post I will humbly share four tips I’ve picked up along the way:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Play with a passion project&lt;/li&gt;
+  &lt;li&gt;Ask the right questions&lt;/li&gt;
+  &lt;li&gt;Really read the docs&lt;/li&gt;
+  &lt;li&gt;Give back to the community&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;sean-blog-image&quot;&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;http://knowyourmeme.com/photos/969154-you-either-die-a-hero-or-you-live-long-enough-to-see-yourself-become-the-villain&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;Noob gif&quot; class=&quot; lazyloaded&quot; src=&quot;/assets/images/seanhelvey/2017/noob.jpg&quot; /&gt;
+    &lt;/a&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;play-with-a-passion-project&quot;&gt;Play with a passion project&lt;/h2&gt;
+&lt;p&gt;Do it! Scratch your own itch. Save the world. Whatever. Just start building &lt;em&gt;something&lt;/em&gt;. I personally tend to get bogged down working through a book of exercises and that has been a huge challenge for me while trying to learn Haskell. I’ve had better success with Elm, because I created &lt;a href=&quot;http://www.valunicorn.me/&quot;&gt;a calculator&lt;/a&gt; that I can actually see and use.&lt;/p&gt;
+
+&lt;h2 id=&quot;ask-the-right-questions&quot;&gt;Ask the right questions&lt;/h2&gt;
+&lt;p&gt;If you roll into a Slack channel and say that your precious calculator is broken, nobody is going to hear you. I’ve found that thinking in terms of higher order functions such as map and fold will help not only when communicating with other programmers, but especially when trying to answer your own questions.&lt;/p&gt;
+
+&lt;p&gt;For me over the last couple of months, it has looked something like this:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Q: “Is there a higher order function to generate a series of values from an initial value?”  &lt;br /&gt;
+A: “Yes. Unfold.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Q: “I’m looking for a function like fold that returns all of the intermediate values almost like map.”  &lt;br /&gt;
+A: “Try scanl.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Think of it like traveling somewhere and attempting to say one or two words in the local tongue. People will generally give you the benefit of the doubt if you make the effort, even when you don’t exactly know what you are talking about.&lt;/p&gt;
+
+&lt;h2 id=&quot;really-read-the-docs&quot;&gt;Really read the docs&lt;/h2&gt;
+&lt;p&gt;In both of the prior examples, I could have avoided asking for help entirely if I had really read the docs. The answers are right there. Don’t be too hard on yourself, though. Learning how to read function signatures can be challenging. Chip away at the docs over time knowing that the answer is there. You will definitely pick up some other goodies along the way.&lt;/p&gt;
+
+&lt;h2 id=&quot;give-back-to-the-community&quot;&gt;Give back to the community&lt;/h2&gt;
+&lt;p&gt;I cannot tell you how grateful I am for the incredible community of functional programmers. Do not be afraid of your zealot co-worker who tells you that Haskell is better than Python and they can prove it (hi &lt;a href=&quot;https://twitter.com/puffnfresh&quot;&gt;@puffnfresh&lt;/a&gt;). They are trying to help you! Let’s be honest - the terminology and pretense around functional programming can be off-putting to some beginners. It’s ok.&lt;/p&gt;
+
+&lt;p&gt;Soon you will find that these people are unbelievably generous and friendly. They are organizing conferences, teaching free classes, writing blog posts, and helping beginners in Slack channels. These people are legitimately trying to make the world a better place. The least that we can do as beginners is attempt to give back in the same way.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Oct 2017 00:00:00 -0600</pubDate>
+        <link>http://seanhelvey.com/tips-from-an-fp-noob/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/tips-from-an-fp-noob/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Go is Not Python</title>
         <description>&lt;p&gt;You know Python fairly well, but your manger wants to start using Go “because it is faster”. Being the overacheiver that you are, you sacrifice time from your precious weekend to figure out the basics. Take a trivial Python program like this for instance:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def main():
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def main():
 
   students = [
     {
@@ -33,51 +84,47 @@
 
 if __name__=='__main__':
   main()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;What is the output of that program?&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt; python for_loop.py
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt; python for_loop.py
 &amp;gt;&amp;gt; fred
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Fred! Of course. An if statement, a for loop. Let’s port it to go:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package main
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
 
-import &quot;fmt&quot;
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
 
-type Student struct {
-    name string
-}
+&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;string&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-func main() {
-    var students [2]Student
-    students[0].name = &quot;fred&quot;
-    students[1].name = &quot;karen&quot;
+&lt;span class=&quot;n&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fred&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;karen&quot;&lt;/span&gt;
 
-    var fredPtr *Student
-    fredPtr = nil
+    &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nil&lt;/span&gt;
 
-    for _, student := range students {
-        if student.name == &quot;fred&quot; {
-          fredPtr = &amp;amp;student
-        }
-    }
+    &lt;span class=&quot;n&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;range&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fred&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-    fmt.Println(fredPtr.name)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+    &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;What is the output of that program?&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt; go run for-loop.go 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt; go run for-loop.go 
 &amp;gt;&amp;gt; karen
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div style=&quot;width: 410px&quot; class=&quot;wp-caption alignnone&quot;&gt;
   &lt;a href=&quot;https://media1.giphy.com/media/ma7VlDSlty3EA/giphy.gif&quot;&gt;&lt;img alt=&quot;Confused&quot; src=&quot;https://media1.giphy.com/media/ma7VlDSlty3EA/giphy.gif&quot; height=&quot;224&quot; /&gt;&lt;/a&gt;
@@ -99,32 +146,31 @@ func main() {
 
 &lt;p&gt;The solution: we have to store a pointer to the value in students, rather than a pointer to the copy of the value from students.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package main
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
 
-import &quot;fmt&quot;
+&lt;span class=&quot;n&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
 
-type Student struct {
-    name string
-}
+&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;string&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-func main() {
-    var students [2]Student
-    students[0].name = &quot;fred&quot;
-    students[1].name = &quot;karen&quot;
+&lt;span class=&quot;n&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fred&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;karen&quot;&lt;/span&gt;
 
-    var fredPtr *Student
-    fredPtr = nil
+    &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nil&lt;/span&gt;
 
-    for idx, student := range students {
-        if student.name == &quot;fred&quot; {
-          fredPtr = &amp;amp;students[idx]
-        }
-    }
+    &lt;span class=&quot;n&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;range&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;students&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fred&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;students&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-    fmt.Println(fredPtr.name)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+    &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fredPtr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;I’ve seen serious bugs in production written by bright Python developers because of this misunderstanding. Go is not Python!&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 00:00:00 -0600</pubDate>
@@ -525,75 +571,6 @@ func main() {
         
         
         <category>Announcements</category>
-        
-      </item>
-    
-      <item>
-        <title>Impact Hub Stockholm</title>
-        <description>&lt;p&gt;Travel to a place where you know nobody and instantly become part of the community there. That’s the experience that I had visiting Stockholm and using the Impact Hub Passport! Everyone from the founder to the hosts and members were extremely friendly and collaborative. This has been the first stop on my journey which will take me to 3 (now 4) hubs in Europe, so it will always have a special place in my heart.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_1017&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-1017 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg&quot; alt=&quot;thumb_IMG_2313_1024&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024-300x225.jpg 300w, /assets/images/seanhelvey/2015/09/thumb_IMG_2313_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Visiting Hubbers
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The space here is incredible and they have interesting ways of getting members involved with leadership. Their “Community Hosts” volunteer one day per week to earn their membership and they have “Member Hosts” who provide expertise in a particular area such as marketing or IT. They also have &lt;a href=&quot;http://stockholm.impacthub.net/member-clubs/&quot; target=&quot;_blank&quot;&gt;member lead events&lt;/a&gt; like climbing and running groups each week.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-makes-impact-hub-stockholm-unique&quot;&gt;What makes Impact Hub Stockholm unique?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Members from Israel, Belgium, France, Germany, Bulgaria, Sweden, etc.&lt;/li&gt;
-  &lt;li&gt;They were open before the first HUB in Islington.&lt;/li&gt;
-  &lt;li&gt;WikiLeaks founder Julian Assange has actually slept at Impact Hub Stockholm.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The highlight of the trip for me personally was working with Anton Håkansson &amp;amp; Simon Olander Sahlén on their app &lt;a href=&quot;https://www.daycape.com/&quot; target=&quot;_blank&quot;&gt;DayCape&lt;/a&gt;, a digital image calendar for children with autism. We hacked on Objective-C together, as they had recently lost their iOS developer.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_941&quot; style=&quot;width: 235px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-941 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg&quot; alt=&quot;thumb_IMG_2224_1024&quot; width=&quot;225&quot; height=&quot;300&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024-225x300.jpg 225w, /assets/images/seanhelvey/2015/09/thumb_IMG_2224_1024.jpg 768w&quot; sizes=&quot;(max-width: 225px) 100vw, 225px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Anton &amp;amp; Simon
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Thank you for the hospitality everyone! The WineDown was really fun and I had a great time going to the climbing gym with the group. I formed some lifelong friendships during my brief time here in Sweden. I’ll be back, but I hope to see you all in Boulder at some point.&lt;/p&gt;
-
-&lt;h3 id=&quot;tips&quot;&gt;Tips&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Check out the fancy adjustable desks. They are awesome.&lt;/li&gt;
-  &lt;li&gt;Members gather every day around noon for lunch. Join them!&lt;/li&gt;
-  &lt;li&gt;Don’t be intimidated by the language. Everyone speaks English.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 09 Sep 2015 06:58:15 -0600</pubDate>
-        <link>http://seanhelvey.com/impact-hub-stockholm/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-stockholm/</guid>
-        
-        <category>Boulder</category>
-        
-        <category>Colorado</category>
-        
-        <category>Community</category>
-        
-        <category>Impact</category>
-        
-        <category>Stockholm</category>
-        
-        <category>Sweden</category>
-        
-        <category>Travel</category>
-        
-        
-        <category>Community</category>
-        
-        <category>Life</category>
-        
-        <category>Travel</category>
         
       </item>
     

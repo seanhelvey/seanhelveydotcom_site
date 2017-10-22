@@ -64,7 +64,7 @@
   <div class="post-content" itemprop="articleBody">
     <p>You know Python fairly well, but your manger wants to start using Go “because it is faster”. Being the overacheiver that you are, you sacrifice time from your precious weekend to figure out the basics. Take a trivial Python program like this for instance:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>def main():
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def main():
 
   students = [
     {
@@ -83,51 +83,47 @@
 
 if __name__=='__main__':
   main()
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>What is the output of that program?</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt; python for_loop.py
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt; python for_loop.py
 &gt;&gt; fred
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Fred! Of course. An if statement, a for loop. Let’s port it to go:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>package main
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">package</span> <span class="n">main</span>
 
-import "fmt"
+<span class="n">import</span> <span class="s2">"fmt"</span>
 
-type Student struct {
-    name string
-}
+<span class="n">type</span> <span class="n">Student</span> <span class="n">struct</span> <span class="p">{</span>
+    <span class="n">name</span> <span class="k">string</span>
+<span class="p">}</span>
 
-func main() {
-    var students [2]Student
-    students[0].name = "fred"
-    students[1].name = "karen"
+<span class="n">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">var</span> <span class="n">students</span> <span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="n">Student</span>
+    <span class="n">students</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">name</span> <span class="p">=</span> <span class="s2">"fred"</span>
+    <span class="n">students</span><span class="p">[</span><span class="m">1</span><span class="p">].</span><span class="n">name</span> <span class="p">=</span> <span class="s2">"karen"</span>
 
-    var fredPtr *Student
-    fredPtr = nil
+    <span class="n">var</span> <span class="n">fredPtr</span> <span class="p">*</span><span class="n">Student</span>
+    <span class="n">fredPtr</span> <span class="p">=</span> <span class="n">nil</span>
 
-    for _, student := range students {
-        if student.name == "fred" {
-          fredPtr = &amp;student
-        }
-    }
+    <span class="n">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">student</span> <span class="p">:=</span> <span class="k">range</span> <span class="n">students</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="p">==</span> <span class="s2">"fred"</span> <span class="p">{</span>
+          <span class="n">fredPtr</span> <span class="p">=</span> <span class="p">&amp;</span><span class="n">student</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-    fmt.Println(fredPtr.name)
-}
-</code></pre>
-</div>
+    <span class="n">fmt</span><span class="p">.</span><span class="n">Println</span><span class="p">(</span><span class="n">fredPtr</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>What is the output of that program?</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt; go run for-loop.go 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt; go run for-loop.go 
 &gt;&gt; karen
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <div style="width: 410px" class="wp-caption alignnone">
   <a href="https://media1.giphy.com/media/ma7VlDSlty3EA/giphy.gif"><img alt="Confused" src="https://media1.giphy.com/media/ma7VlDSlty3EA/giphy.gif" height="224" /></a>
@@ -149,32 +145,31 @@ func main() {
 
 <p>The solution: we have to store a pointer to the value in students, rather than a pointer to the copy of the value from students.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>package main
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">package</span> <span class="n">main</span>
 
-import "fmt"
+<span class="n">import</span> <span class="s2">"fmt"</span>
 
-type Student struct {
-    name string
-}
+<span class="n">type</span> <span class="n">Student</span> <span class="n">struct</span> <span class="p">{</span>
+    <span class="n">name</span> <span class="k">string</span>
+<span class="p">}</span>
 
-func main() {
-    var students [2]Student
-    students[0].name = "fred"
-    students[1].name = "karen"
+<span class="n">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">var</span> <span class="n">students</span> <span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="n">Student</span>
+    <span class="n">students</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">name</span> <span class="p">=</span> <span class="s2">"fred"</span>
+    <span class="n">students</span><span class="p">[</span><span class="m">1</span><span class="p">].</span><span class="n">name</span> <span class="p">=</span> <span class="s2">"karen"</span>
 
-    var fredPtr *Student
-    fredPtr = nil
+    <span class="n">var</span> <span class="n">fredPtr</span> <span class="p">*</span><span class="n">Student</span>
+    <span class="n">fredPtr</span> <span class="p">=</span> <span class="n">nil</span>
 
-    for idx, student := range students {
-        if student.name == "fred" {
-          fredPtr = &amp;students[idx]
-        }
-    }
+    <span class="n">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">student</span> <span class="p">:=</span> <span class="k">range</span> <span class="n">students</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="n">student</span><span class="p">.</span><span class="n">name</span> <span class="p">==</span> <span class="s2">"fred"</span> <span class="p">{</span>
+          <span class="n">fredPtr</span> <span class="p">=</span> <span class="p">&amp;</span><span class="n">students</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-    fmt.Println(fredPtr.name)
-}
-</code></pre>
-</div>
+    <span class="n">fmt</span><span class="p">.</span><span class="n">Println</span><span class="p">(</span><span class="n">fredPtr</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
 <p>I’ve seen serious bugs in production written by bright Python developers because of this misunderstanding. Go is not Python!</p>
 
   </div>
