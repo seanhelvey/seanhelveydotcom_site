@@ -6,9 +6,27 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Oct 2017 21:54:28 -0600</pubDate>
-    <lastBuildDate>Sat, 21 Oct 2017 21:54:28 -0600</lastBuildDate>
+    <pubDate>Fri, 24 Nov 2017 13:47:09 -0700</pubDate>
+    <lastBuildDate>Fri, 24 Nov 2017 13:47:09 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Elm Events in Colorado</title>
+        <description>&lt;p&gt;December Elm Hack Night has been cancelled, but Wednesday January 24th is &lt;a href=&quot;https://www.meetup.com/Front-range-elm/events/245365431/&quot;&gt;Beginner’s Night&lt;/a&gt; at Front Range Elm. Please spread the word and bring your friends!&lt;/p&gt;
+
+&lt;p&gt;Here are some other Elm events happening in CO over the coming months:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;12/4 6:30p &lt;a href=&quot;https://www.meetup.com/NoCo-JavaScript-Meetup/events/243653786&quot;&gt;NoCo JS&lt;/a&gt; - “What the Elm?” - &lt;a href=&quot;https://github.com/seanhelvey/what-the-elm&quot;&gt;Slides / Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1/23 6:00p &lt;a href=&quot;https://www.meetup.com/DenverScript/events/244717323/&quot;&gt;DenverScript&lt;/a&gt; - Similar deck, maybe more of an emphasis on types&lt;/li&gt;
+  &lt;li&gt;1/25 &lt;a href=&quot;https://www.meetup.com/denverfp/events/fzhgnnyxcbhc/&quot;&gt;Denver FP&lt;/a&gt; - Not confirmed, but I am proposing 2-3 people give 15-20m talks longer than lightning but more focused than a big 60m presentation. Please reach out of you are interested!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 24 Nov 2017 00:00:00 -0700</pubDate>
+        <link>http://seanhelvey.com/elm-events-in-colorado/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/elm-events-in-colorado/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Tips From a FP Noob</title>
@@ -535,39 +553,6 @@ if __name__=='__main__':
         <category>Sweden</category>
         
         <category>WebGL</category>
-        
-        
-        <category>Announcements</category>
-        
-      </item>
-    
-      <item>
-        <title>Travel</title>
-        <description>&lt;p&gt;Hey everyone! Blue Hook is in Europe attending &lt;a href=&quot;http://nordicjs.com/&quot; target=&quot;_blank&quot;&gt;Nordic.js&lt;/a&gt; and &lt;a href=&quot;http://rejectjs.org/&quot; target=&quot;_blank&quot;&gt;Reject.js&lt;/a&gt; this month. Along the way I’ll be working out of several Impact Hubs and the whole journey will be documented on &lt;a href=&quot;/&quot; target=&quot;_blank&quot;&gt;my personal blog&lt;/a&gt; if you are interested in following along.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_623&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2313_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-623&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2313_1024-300x225.jpg&quot; alt=&quot;Blue Hook in Stockholm&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2313_1024-300x225.jpg 300w, /assets/images/bluehook/2015/09/thumb_IMG_2313_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Blue Hook in Stockholm
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 09 Sep 2015 07:51:09 -0600</pubDate>
-        <link>http://seanhelvey.com/travel/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/travel/</guid>
-        
-        <category>berlin</category>
-        
-        <category>impact</category>
-        
-        <category>javascript</category>
-        
-        <category>prague</category>
-        
-        <category>stockholm</category>
-        
-        <category>travel</category>
         
         
         <category>Announcements</category>
