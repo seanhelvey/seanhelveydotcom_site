@@ -6,9 +6,37 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Nov 2017 13:47:09 -0700</pubDate>
-    <lastBuildDate>Fri, 24 Nov 2017 13:47:09 -0700</lastBuildDate>
+    <pubDate>Sun, 14 Jan 2018 09:37:25 -0700</pubDate>
+    <lastBuildDate>Sun, 14 Jan 2018 09:37:25 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Nested React Routes in v4</title>
+        <description>&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt; in React Router v4 works for plain old child components, but not when your child component is a nested &lt;code class=&quot;highlighter-rouge&quot;&gt;Route&lt;/code&gt;. In &lt;a href=&quot;https://github.com/seanhelvey/react-router-quickstart-nested-routes/&quot;&gt;this example&lt;/a&gt; I’ve taken the react router quickstart tweaked it to pass props into a wrapped route.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+const WrappedRoute = (props) =&amp;gt; {
+  console.log(&quot;WrappedRoute props&quot;, props)
+  return(
+    &amp;lt;div&amp;gt;
+      &amp;lt;h3&amp;gt;{props.yo()}&amp;lt;/h3&amp;gt;
+      &amp;lt;Route path={`${props.match.path}/:topicId`} render={Topic}/&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+
+&amp;lt;WrappedRoute yo={() =&amp;gt; &quot;yo&quot;} {...props}&amp;gt;&amp;lt;/WrappedRoute&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Please &lt;a href=&quot;https://twitter.com/seanhelvey&quot;&gt;Let me know&lt;/a&gt; if you disagree with this approach or have a better alternative. Hope this helps!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Jan 2018 00:00:00 -0700</pubDate>
+        <link>http://seanhelvey.com/nested-react-router-v4/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/nested-react-router-v4/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Elm Events in Colorado</title>
@@ -479,83 +507,6 @@ if __name__=='__main__':
         <category>Life</category>
         
         <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Nordic.js</title>
-        <description>&lt;p&gt;JavaScript is unique from other programming languages because it is used not only on the server, but within the browser. So while other languages might give you the ability to create visualizations on the front-end or develop an API on the back-end, JavaScript empowers engineers to do all of those things and much more.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_635&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2367_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-635&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2367_1024-300x225.jpg&quot; alt=&quot;We love JavaScript!&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2367_1024-300x225.jpg 300w, http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2367_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    We love JavaScript!
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Take a look at the incredible variety of topics covered on just the first day at Nordic.js:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;There are no promises in node.js&lt;/li&gt;
-  &lt;li&gt;Creating Expressive UI with ReactJS&lt;/li&gt;
-  &lt;li&gt;Forgotten Funky Functions&lt;/li&gt;
-  &lt;li&gt;Bin your select tags&lt;/li&gt;
-  &lt;li&gt;Augmented reality with JavaScript&lt;/li&gt;
-  &lt;li&gt;Advanced front-end automation with npm scripts&lt;/li&gt;
-  &lt;li&gt;Through the looking glass – programming on the GPU using WebGL&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Each one of these talks was extremely impressive. As one of the core contributors to node.js, Bert Belder displayed a deep understanding of the history behind the project along with its implementation details. Tara Jane Feener schooled us on ReactJS, Zeno Rocha blew our minds with his work on augmented reality in the browser, and Felix Palmer put his knowledge of physics to use with his amazing talk on WebGL. My favorite talk of the day was Kate Hudson’s overview of front-end automation with npm scripts.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_638&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2370_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-638&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2370_1024-300x225.jpg&quot; alt=&quot;The stage&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2370_1024-300x225.jpg 300w, http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2370_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    The stage
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Just when I thought it couldn’t get any better, Franziska Hinkelmann started day 2 out with an enlightening “trip to the zoo” comparing different JavaScript engines. Her juxtaposition between C++ and JavaScript (below) was a show stopper, as were her tips about avoiding premature optimization and focusing only on the bottlenecks which were truly having an impact on performance.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_637&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2369_1024.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-637&quot; src=&quot;/assets/images/bluehook/2015/09/thumb_IMG_2369_1024-300x225.jpg&quot; alt=&quot;C++ vs. JavaScript&quot; width=&quot;300&quot; height=&quot;225&quot; srcset=&quot;http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2369_1024-300x225.jpg 300w, http://www.bluehook.co/wp-content/uploads/2015/09/thumb_IMG_2369_1024.jpg 1024w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    C++ vs. JavaScript
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The conference was full of interesting people and good vibes. We all had a ton of fun at “Festen” and the techno ping pong party. Getting a ticket wasn’t easy, but it was worth it. Hopefully we will see you all again next year!&lt;/p&gt;
-</description>
-        <pubDate>Mon, 14 Sep 2015 06:44:13 -0600</pubDate>
-        <link>http://seanhelvey.com/nordic-js/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/nordic-js/</guid>
-        
-        <category>augmented reality</category>
-        
-        <category>Conferences</category>
-        
-        <category>GPU</category>
-        
-        <category>javascript</category>
-        
-        <category>Mobile Web</category>
-        
-        <category>node.js</category>
-        
-        <category>npm</category>
-        
-        <category>ReactJS</category>
-        
-        <category>stockholm</category>
-        
-        <category>Sweden</category>
-        
-        <category>WebGL</category>
-        
-        
-        <category>Announcements</category>
         
       </item>
     
