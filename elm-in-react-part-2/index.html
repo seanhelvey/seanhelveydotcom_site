@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Elm in React Part #1</title>
-  <meta name="description" content="This post will expand upon Evan’s post describing how to use Elm with React. I’ve been using this todo list example to teach react for a while now (thanks Ch...">
+  <title>Elm in React Part #2</title>
+  <meta name="description" content="This is a follow-up to Elm in React Part #1. In the first post we replaced the “add todo” form portion of a React todo list app with “hello world” written in...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://seanhelvey.com/elm-in-react-part-1/">
+  <link rel="canonical" href="http://seanhelvey.com/elm-in-react-part-2/">
   <link rel="alternate" type="application/rss+xml" title="Sean Helvey" href="http://seanhelvey.com/feed.xml">
   <link rel="icon" type="image/png" href="/assets/images/thinker2.jpg">
 </head>
@@ -61,19 +61,17 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Elm in React Part #1</h1>
-    <p class="post-meta"><time datetime="2018-02-25T00:00:00-07:00" itemprop="datePublished">Feb 25, 2018</time></p>
+    <h1 class="post-title" itemprop="name headline">Elm in React Part #2</h1>
+    <p class="post-meta"><time datetime="2018-02-27T00:00:00-07:00" itemprop="datePublished">Feb 27, 2018</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>This post will expand upon <a href="http://elm-lang.org/blog/how-to-use-elm-at-work">Evan’s post</a> describing how to use Elm with React. I’ve been using <a href="https://github.com/seanhelvey/react-intro-exercise">this todo list example</a> to teach react for a while now (thanks <a href="https://twitter.com/chadwithuhc">Chad</a>!) so I thought it would make sense to use the same example here. Checkout the Elm branch of the todo list repo linked above if you want to follow along. You can see the whole commit diff for this blog post <a href="https://github.com/seanhelvey/react-intro-exercise/commit/2fcb2ddb9db4b3bb655312a4df1b5dc2d1c88a6d">here</a>.</p>
+    <p>This is a follow-up to <a href="http://www.seanhelvey.com/elm-in-react-part-1/">Elm in React Part #1</a>. In the first post we replaced the “add todo” form portion of a React todo list app with “hello world” written in Elm. Now we will replace the Elm “hello world” stub with an Elm view. Checkout the Elm branch of <a href="https://github.com/seanhelvey/react-intro-exercise">this todo list repo</a> if you want to follow along. In plain English these are the steps I took:</p>
 
-<p>We need to do a few things to add Elm into our react app:</p>
 <ol>
-  <li>Npm install <code class="highlighter-rouge">elm-webpack-loader</code> and <code class="highlighter-rouge">react-elm-components</code></li>
-  <li>Update Webpack config</li>
-  <li>Install Elm packages (and add elm-stuff to .gitignore)</li>
-  <li>Replace React component with Elm</li>
+  <li>Surrender to the Elm Architecture</li>
+  <li>Try to translate the view from JSX to Elm</li>
+  <li>Follow the friendly compiler error messages</li>
 </ol>
 
 <div class="sean-blog-image">
@@ -86,54 +84,45 @@
   </figure>
 </div>
 
-<h3 id="step-1---npm-install">Step 1 - Npm install</h3>
-<p>Step one above doesn’t need explaining, but I’ll describe steps 2-4 in more detail.</p>
+<h3 id="step-1----surrender-to-the-elm-architecture">Step 1 -  Surrender to the Elm Architecture</h3>
+<p>Don’t fight or resist it! If you really are porting a React app, you are probably stuck thinking about props, state, and event handlers. In some ways writing an Elm application from scratch is easier than translating existing JavaScript or React. For me, the mental shift back to Elm from React was tough, but it was an amazing learning experience.</p>
 
-<h3 id="step-2---update-webpack-config">Step 2 - Update Webpack config</h3>
+<p>One trick I’ve learned trying to teach Elm over the last couple of months is that you can start with a simple view before diving into model and update. I know this might go against other conventional Elm wisdom and I am open to feedback, but something like this here below can be a nice small step toward Elmy goodness IMHO.</p>
 
-<div class="sean-blog-image">
-  <figure>
-    <a href="/assets/images/seanhelvey/2018/webpack.png" target="_blank"><img alt="webpack" class=" lazyloaded" src="/assets/images/seanhelvey/2018/webpack.png" />
-    </a>
-  <figcaption>
-    Add the elm-webpack-loader and noParse lines. Note that the syntax has changed so that we must specify "elm-webpack-loader" rather than just "elm-webpack" as Evan and Richard had in their example.
-  </figcaption>
-  </figure>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>port module AddCardForm exposing (main)
 
-<h3 id="step-3---install-elm-packages">Step 3 - Install Elm packages</h3>
-<p><a href="https://guide.elm-lang.org/install.html">Install elm</a> if you haven’t already, and then run the following two commands:</p>
+import Html exposing (text, form, input, label, fieldset)
+import Html.Attributes exposing (attribute, id, class)
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elm-package install elm-lang/core
-elm-package install elm-lang/html
+
+main =
+    form [ class "well" ]
+        [ fieldset [ class "form-group" ]
+            [ label [ attribute "htmlFor" "title" ]
+                [ text "Title" ]
+            , input [ class "form-control", id "title" ] []
+            ]
+        ]
+
 </code></pre></div></div>
 
-<p>You will want to add <code class="highlighter-rouge">elm-stuff</code> to your <code class="highlighter-rouge">.gitignore</code> at this point.</p>
+<p>It compiles and looks exactly like it did in the React / JSX version! Now we can add functionality to this view, which will require that we finish building out a model and update function.</p>
 
-<h3 id="step-4---replace-react-component-with-elm">Step 4 - Replace React component with Elm</h3>
-<p>Now we can easily replace the React component in our <code class="highlighter-rouge">app.js</code> file with Elm:</p>
+<h3 id="step-2---try-to-translate-the-view-from-jsx-to-elm">Step 2 - Try to translate the view from JSX to Elm</h3>
+<p>You can see the finished Elm view and the React / JSX code we replaced in this diff below. The thing is that the awesome Elm compiler will ensure that you have a model and update function before you are really able to “finish” this part of the Elm application. We will cover that next in Part #3. So while you may glance at the diff here below, know that you need to flush out the rest of the Elm Architecture before “wiring up” the view. If these diffs or snippets become confusing, please take a look at the finished Elm branch of this repo <a href="https://github.com/seanhelvey/react-intro-exercise/">here</a>.</p>
 
 <div class="sean-blog-image">
   <figure>
-    <a href="/assets/images/seanhelvey/2018/app.png" target="_blank"><img alt="app" class=" lazyloaded" src="/assets/images/seanhelvey/2018/app.png" />
+    <a href="/assets/images/seanhelvey/2018/viewDiff.png" target="_blank"><img alt="viewDiff" class=" lazyloaded" src="/assets/images/seanhelvey/2018/viewDiff.png" />
     </a>
   <figcaption>
-    Replace the React component in `app.js` with Elm
+    A google search will lead you to many tools which can help you easily translate HTML or JSX to Elm. You can start there, and then make little tweaks as you see fit. If you have any trouble with elm-format, take a look at this <a href="https://github.com/avh4/elm-format/issues/408" target="_blank">GitHub Issue</a> for guidance.
   </figcaption>
   </figure>
 </div>
 
-<div class="sean-blog-image">
-  <figure>
-    <a href="/assets/images/seanhelvey/2018/addCard.png" target="_blank"><img alt="addCard" class=" lazyloaded" src="/assets/images/seanhelvey/2018/addCard.png" />
-    </a>
-  <figcaption>
-    Our Elm file is hello world for now
-  </figcaption>
-  </figure>
-</div>
-
-<p>We will replace the react view with Elm in <a href="http://www.seanhelvey.com/elm-in-react-part-2/">part #2</a></p>
+<h3 id="step-3">Step 3</h3>
+<p>If you have surrendered to The Elm Architecture (step #1) and tried translating the view from JSX to Elm (step #2) then you should be able to follow the friendly compiler error messages (step #3) as they shepherd you through any confusion from the Elm guide, docs, or other code samples and blog posts you are referring to. In the next post we will illustrate how to do this using the model and update functions along with ports to finish the “add todo” functionality.</p>
 
   </div>
 

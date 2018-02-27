@@ -6,9 +6,76 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Feb 2018 10:31:53 -0700</pubDate>
-    <lastBuildDate>Sun, 25 Feb 2018 10:31:53 -0700</lastBuildDate>
+    <pubDate>Tue, 27 Feb 2018 09:44:59 -0700</pubDate>
+    <lastBuildDate>Tue, 27 Feb 2018 09:44:59 -0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Elm in React Part #2</title>
+        <description>&lt;p&gt;This is a follow-up to &lt;a href=&quot;http://www.seanhelvey.com/elm-in-react-part-1/&quot;&gt;Elm in React Part #1&lt;/a&gt;. In the first post we replaced the “add todo” form portion of a React todo list app with “hello world” written in Elm. Now we will replace the Elm “hello world” stub with an Elm view. Checkout the Elm branch of &lt;a href=&quot;https://github.com/seanhelvey/react-intro-exercise&quot;&gt;this todo list repo&lt;/a&gt; if you want to follow along. In plain English these are the steps I took:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Surrender to the Elm Architecture&lt;/li&gt;
+  &lt;li&gt;Try to translate the view from JSX to Elm&lt;/li&gt;
+  &lt;li&gt;Follow the friendly compiler error messages&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;sean-blog-image&quot;&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;/assets/images/seanhelvey/2018/todo.png&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;todo&quot; class=&quot; lazyloaded&quot; src=&quot;/assets/images/seanhelvey/2018/todo.png&quot; /&gt;
+    &lt;/a&gt;
+  &lt;figcaption&gt;
+    A simple todo list
+  &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-1----surrender-to-the-elm-architecture&quot;&gt;Step 1 -  Surrender to the Elm Architecture&lt;/h3&gt;
+&lt;p&gt;Don’t fight or resist it! If you really are porting a React app, you are probably stuck thinking about props, state, and event handlers. In some ways writing an Elm application from scratch is easier than translating existing JavaScript or React. For me, the mental shift back to Elm from React was tough, but it was an amazing learning experience.&lt;/p&gt;
+
+&lt;p&gt;One trick I’ve learned trying to teach Elm over the last couple of months is that you can start with a simple view before diving into model and update. I know this might go against other conventional Elm wisdom and I am open to feedback, but something like this here below can be a nice small step toward Elmy goodness IMHO.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port module AddCardForm exposing (main)
+
+import Html exposing (text, form, input, label, fieldset)
+import Html.Attributes exposing (attribute, id, class)
+
+
+main =
+    form [ class &quot;well&quot; ]
+        [ fieldset [ class &quot;form-group&quot; ]
+            [ label [ attribute &quot;htmlFor&quot; &quot;title&quot; ]
+                [ text &quot;Title&quot; ]
+            , input [ class &quot;form-control&quot;, id &quot;title&quot; ] []
+            ]
+        ]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It compiles and looks exactly like it did in the React / JSX version! Now we can add functionality to this view, which will require that we finish building out a model and update function.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2---try-to-translate-the-view-from-jsx-to-elm&quot;&gt;Step 2 - Try to translate the view from JSX to Elm&lt;/h3&gt;
+&lt;p&gt;You can see the finished Elm view and the React / JSX code we replaced in this diff below. The thing is that the awesome Elm compiler will ensure that you have a model and update function before you are really able to “finish” this part of the Elm application. We will cover that next in Part #3. So while you may glance at the diff here below, know that you need to flush out the rest of the Elm Architecture before “wiring up” the view. If these diffs or snippets become confusing, please take a look at the finished Elm branch of this repo &lt;a href=&quot;https://github.com/seanhelvey/react-intro-exercise/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;sean-blog-image&quot;&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;/assets/images/seanhelvey/2018/viewDiff.png&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;viewDiff&quot; class=&quot; lazyloaded&quot; src=&quot;/assets/images/seanhelvey/2018/viewDiff.png&quot; /&gt;
+    &lt;/a&gt;
+  &lt;figcaption&gt;
+    A google search will lead you to many tools which can help you easily translate HTML or JSX to Elm. You can start there, and then make little tweaks as you see fit. If you have any trouble with elm-format, take a look at this &lt;a href=&quot;https://github.com/avh4/elm-format/issues/408&quot; target=&quot;_blank&quot;&gt;GitHub Issue&lt;/a&gt; for guidance.
+  &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;If you have surrendered to The Elm Architecture (step #1) and tried translating the view from JSX to Elm (step #2) then you should be able to follow the friendly compiler error messages (step #3) as they shepherd you through any confusion from the Elm guide, docs, or other code samples and blog posts you are referring to. In the next post we will illustrate how to do this using the model and update functions along with ports to finish the “add todo” functionality.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Feb 2018 00:00:00 -0700</pubDate>
+        <link>http://seanhelvey.com/elm-in-react-part-2/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/elm-in-react-part-2/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Elm in React Part #1</title>
@@ -22,10 +89,20 @@
   &lt;li&gt;Replace React component with Elm&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+&lt;div class=&quot;sean-blog-image&quot;&gt;
+  &lt;figure&gt;
+    &lt;a href=&quot;/assets/images/seanhelvey/2018/todo.png&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;todo&quot; class=&quot; lazyloaded&quot; src=&quot;/assets/images/seanhelvey/2018/todo.png&quot; /&gt;
+    &lt;/a&gt;
+  &lt;figcaption&gt;
+    A simple todo list
+  &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-1---npm-install&quot;&gt;Step 1 - Npm install&lt;/h3&gt;
 &lt;p&gt;Step one above doesn’t need explaining, but I’ll describe steps 2-4 in more detail.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+&lt;h3 id=&quot;step-2---update-webpack-config&quot;&gt;Step 2 - Update Webpack config&lt;/h3&gt;
 
 &lt;div class=&quot;sean-blog-image&quot;&gt;
   &lt;figure&gt;
@@ -37,7 +114,7 @@
   &lt;/figure&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+&lt;h3 id=&quot;step-3---install-elm-packages&quot;&gt;Step 3 - Install Elm packages&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://guide.elm-lang.org/install.html&quot;&gt;Install elm&lt;/a&gt; if you haven’t already, and then run the following two commands:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elm-package install elm-lang/core
@@ -46,7 +123,7 @@ elm-package install elm-lang/html
 
 &lt;p&gt;You will want to add &lt;code class=&quot;highlighter-rouge&quot;&gt;elm-stuff&lt;/code&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; at this point.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-4&quot;&gt;Step 4&lt;/h3&gt;
+&lt;h3 id=&quot;step-4---replace-react-component-with-elm&quot;&gt;Step 4 - Replace React component with Elm&lt;/h3&gt;
 &lt;p&gt;Now we can easily replace the React component in our &lt;code class=&quot;highlighter-rouge&quot;&gt;app.js&lt;/code&gt; file with Elm:&lt;/p&gt;
 
 &lt;div class=&quot;sean-blog-image&quot;&gt;
@@ -69,7 +146,7 @@ elm-package install elm-lang/html
   &lt;/figure&gt;
 &lt;/div&gt;
 
-&lt;p&gt;We will replace the add todo functionality in the second part of this post.&lt;/p&gt;
+&lt;p&gt;We will replace the react view with Elm in &lt;a href=&quot;http://www.seanhelvey.com/elm-in-react-part-2/&quot;&gt;part #2&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Feb 2018 00:00:00 -0700</pubDate>
         <link>http://seanhelvey.com/elm-in-react-part-1/</link>
@@ -457,63 +534,6 @@ if __name__=='__main__':
         <category>jekyll</category>
         
         <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Impact Hub Berlin</title>
-        <description>&lt;p&gt;I hope that Impact Hub Berlin never changes. Members will come and go, superficial improvements may happen over time, but the warm and colorful community there can withstand all of it. To understand this co-working space, you have to know &lt;a href=&quot;https://zurich.impacthub.ch/impact-hub-berlin/&quot; target=&quot;_blank&quot;&gt;its history&lt;/a&gt; and the people behind it.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_1180&quot; style=&quot;width: 310px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/seanhelvey/2015/10/image-801041-breitwandaufmacher-gtpu.jpg&quot;&gt;&lt;img class=&quot;size-medium wp-image-1180&quot; src=&quot;/assets/images/seanhelvey/2015/10/image-801041-breitwandaufmacher-gtpu-300x112.jpg&quot; alt=&quot;Managing Director Nele Kapretz with Angela Merkel &quot; width=&quot;300&quot; height=&quot;112&quot; srcset=&quot;/assets/images/seanhelvey/2015/10/image-801041-breitwandaufmacher-gtpu-300x112.jpg 300w, /assets/images/seanhelvey/2015/10/image-801041-breitwandaufmacher-gtpu.jpg 860w&quot; sizes=&quot;(max-width: 300px) 100vw, 300px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Managing Director Nele Kapretz with Angela Merkel
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;One prior endeavor to form Impact Hub Berlin failed. A different group within the community rallied and made another attempt at a prototype, but it still wasn’t clear that the organization would be sustainable. Finally, the effort was successful, and the people here have the space that they always wanted. Take a look at some of the pictures from the renovation below.&lt;/p&gt;
-
-&lt;p&gt;This space was designed by members Margit Sichrovsky and Kim le Roux of &lt;a href=&quot;http://www.lxsy.de/&quot;&gt;http://www.lxsy.de/&lt;/a&gt;. They are creating some incredible social funding opportunities in South Africa with their work in Gap Housing. The pair has also made their mark on Impact Hub Berlin in a number of unique ways.&lt;/p&gt;
-
-&lt;p&gt;The “focus area” has an incredible little nook and another section for taking naps! The cafe has a secret spot above the kitchen which can only be accessed with a ladder. The phone booth is unique from every one that I’ve ever seen as is the teams’s commitment to updating and improving the space. The signage out front was being replaced during my week there.&lt;/p&gt;
-
-&lt;div id=&quot;attachment_1139&quot; style=&quot;width: 235px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
-  &lt;a href=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2882_1024.jpg&quot;&gt;&lt;img class=&quot;wp-image-1139 size-medium&quot; src=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2882_1024-225x300.jpg&quot; alt=&quot;Member Host Matt Beer&quot; width=&quot;225&quot; height=&quot;300&quot; srcset=&quot;/assets/images/seanhelvey/2015/09/thumb_IMG_2882_1024-225x300.jpg 225w, /assets/images/seanhelvey/2015/09/thumb_IMG_2882_1024.jpg 768w&quot; sizes=&quot;(max-width: 225px) 100vw, 225px&quot; /&gt;&lt;/a&gt;
-
-  &lt;p class=&quot;wp-caption-text&quot;&gt;
-    Member Host Matt Beer
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I was blown away by the friendly hosts and team members from Impact Hub Berlin. Isabel, Nicole, Steph, and Jonas made me feel right at home. Matt took me out for a traditional German lunch with some awesome Hub Global folks. Vishal Jodhani is the most extraordinary community catalyst and connector that I have ever met! These people are simply amazing.&lt;/p&gt;
-
-&lt;p&gt;It was a pleasure to meet Benjamin Snow of &lt;a href=&quot;https://berlin.impacthub.net/2015/09/30/member-stories-meet-civocracy/&quot; target=&quot;_blank&quot;&gt;Civocracy.org&lt;/a&gt;, who also hails from Colorado. Brock LeMieux made an attempt at starting Impact Hub Oslo before finding his place here in Berlin, but I am hoping he comes back to Boulder at some point, as he has also spent some time in Colorado. Anula and Alexandra gave me an interesting local perspective along with some fantastic book recommendations.&lt;/p&gt;
-
-&lt;p&gt;This post is dedicated to all of the people who have started or participated in the creation of an Impact Hub around the world, even those who have failed along the way, and anyone who would consider themselves a member of the community. These places don’t exist in a vacuum. Individuals dream about creating them, but they build teams to make it happen, and work together with many different parties throughout the process (see &lt;a href=&quot;https://zurich.impacthub.ch/impact-hub-manila/&quot; target=&quot;_blank&quot;&gt;“What does it take to open an Impact Hub?”&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Thank you for allowing me to visit and tell this story! My hope is that these posts inspire people to become members and tempt existing members into visiting other locations. I’m absolutely inspired after seeing all of it and I’m sure that you will be too.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 03 Oct 2015 02:14:09 -0600</pubDate>
-        <link>http://seanhelvey.com/impact-hub-berlin/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/impact-hub-berlin/</guid>
-        
-        <category>Berlin</category>
-        
-        <category>Entrepreneurship</category>
-        
-        <category>Impact</category>
-        
-        <category>Social</category>
-        
-        <category>Travel</category>
-        
-        
-        <category>Community</category>
-        
-        <category>Life</category>
-        
-        <category>Travel</category>
         
       </item>
     
