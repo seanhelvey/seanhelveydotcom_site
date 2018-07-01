@@ -83,20 +83,22 @@
 <p>Take a good look at the <a href="https://github.com/evancz/react-elm-components/blob/master/example/Chat.elm">react-elm-components</a> example and think about how you can solve this problem using The Elm Architecture. I decided that our model could simply be the <code class="highlighter-rouge">Input String</code> portion of the model used in the example.</p>
 
 <h4 id="model">Model</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type alias Model =
+<div class="highlighter-rouge"><pre class="highlight"><code>type alias Model =
     { input : String }
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <p>The Msg and update function could be very similar too. We can still have an <code class="highlighter-rouge">Input</code> case for user input, and we can use the Msg <code class="highlighter-rouge">Submit</code> instead of send.</p>
 
 <h4 id="msg">Msg</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type Msg
+<div class="highlighter-rouge"><pre class="highlight"><code>type Msg
     = Submit
     | Input String
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <h4 id="update">Update</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>update : Msg -&gt; Model -&gt; ( Model, Cmd Msg )
+<div class="highlighter-rouge"><pre class="highlight"><code>update : Msg -&gt; Model -&gt; ( Model, Cmd Msg )
 update msg model =
     case msg of
         Submit -&gt;
@@ -112,7 +114,8 @@ update msg model =
             ( { model | input = newInput }
             , Cmd.none
             )
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <p>What is lowercase “submit” where it says <code class="highlighter-rouge">submit oldInput</code> in the snippet above? That is our port, which we will discuss next. Feel free to replace it with <code class="highlighter-rouge">Cmd.none</code> temporarily and allow the compiler to guide you the rest of the way.</p>
 
@@ -122,7 +125,7 @@ update msg model =
 <p>We will now wire-up the view to produce a message and display the updated model. Remember our stub view from <a href="http://www.seanhelvey.com/elm-in-react-part-2/">Elm in React Part #2</a>?</p>
 
 <h4 id="our-stub-view-function">Our stub view function</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>port module AddCardForm exposing (main)
+<div class="highlighter-rouge"><pre class="highlight"><code>port module AddCardForm exposing (main)
 
 import Html exposing (text, form, input, label, fieldset)
 import Html.Attributes exposing (attribute, id, class)
@@ -137,12 +140,13 @@ main =
             ]
         ]
 
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <p>Let’s make it so that when a user clicks on a button, it produces a message. Once that message has been piped into the update function, we will use the view function to show the new model on screen.</p>
 
 <h4 id="the-completed-view-function">The completed view function</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>view : Model -&gt; Html Msg
+<div class="highlighter-rouge"><pre class="highlight"><code>view : Model -&gt; Html Msg
 view model =
     let
         options =
@@ -156,18 +160,21 @@ view model =
                 ]
             ]
 
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <h3 id="step-3---use-ports-to-communicate-with-javascript--react">Step 3 - Use ports to communicate with JavaScript / React</h3>
 <p>To use Elm ports, we need the keyword “port” in front of our module declaration at the top of the file.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>port module AddCardForm exposing (main)
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>port module AddCardForm exposing (main)
+</code></pre>
+</div>
 
 <p>Now we add a port for sending Strings out to JavaScript or React.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>port submit : String -&gt; Cmd msg
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>port submit : String -&gt; Cmd msg
+</code></pre>
+</div>
 
 <p>It could be a different type such as <code class="highlighter-rouge">List Float</code>. <a href="https://github.com/seanhelvey/valunicorn/blob/master/src/Calculator.elm">Here is an example</a> of a port sending a <code class="highlighter-rouge">List Float</code> to JavaScript.</p>
 

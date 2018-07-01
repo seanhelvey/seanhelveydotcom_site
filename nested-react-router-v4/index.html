@@ -68,7 +68,7 @@
   <div class="post-content" itemprop="articleBody">
     <p>Using <code class="highlighter-rouge">render</code> instead of <code class="highlighter-rouge">component</code> in React Router v4 works for plain old child components, but not when your child component is a nested <code class="highlighter-rouge">Route</code>. In <a href="https://github.com/seanhelvey/react-router-quickstart-nested-routes/">this example</a> I’ve taken the react router quickstart tweaked it to pass props into a wrapped route.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="highlighter-rouge"><pre class="highlight"><code>
 const WrappedRoute = (props) =&gt; {
   console.log("WrappedRoute props", props)
   return(
@@ -81,7 +81,8 @@ const WrappedRoute = (props) =&gt; {
 
 &lt;WrappedRoute yo={() =&gt; "yo"} {...props}&gt;&lt;/WrappedRoute&gt;
 
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <p>Please <a href="https://twitter.com/seanhelvey">Let me know</a> if you disagree with this approach or have a better alternative. Hope this helps!</p>
 

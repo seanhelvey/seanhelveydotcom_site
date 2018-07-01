@@ -89,7 +89,7 @@
 
 <p>One trick I’ve learned trying to teach Elm over the last couple of months is that you can start with a simple view before diving into model and update. I know this might go against other conventional Elm wisdom and I am open to feedback, but something like this here below can be a nice small step toward Elmy goodness IMHO.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>port module AddCardForm exposing (main)
+<div class="highlighter-rouge"><pre class="highlight"><code>port module AddCardForm exposing (main)
 
 import Html exposing (text, form, input, label, fieldset)
 import Html.Attributes exposing (attribute, id, class)
@@ -104,7 +104,8 @@ main =
             ]
         ]
 
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <p>It compiles and looks exactly like it did in the React / JSX version! Now we can add functionality to this view, which will require that we finish building out a model and update function.</p>
 
