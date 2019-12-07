@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Pay As You Learn</title>
-  <meta name="description" content="Be careful out there, kids! While many repayment plans are available to college graduates today, it is worth considering the implications of postponing inter...">
+  <title>Rails without sudo</title>
+  <meta name="description" content="The installation process is an unfortunate stumbling block for many people learning Ruby on Rails. While it is easy to get going, it is also too easy to end ...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://seanhelvey.com/pay-as-you-learn/">
+  <link rel="canonical" href="http://seanhelvey.com/rails-without-sudo/">
   <link rel="alternate" type="application/rss+xml" title="Sean Helvey" href="http://seanhelvey.com/feed.xml">
   <link rel="icon" type="image/png" href="/assets/images/thinker2.jpg">
 </head>
@@ -64,20 +64,28 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Pay As You Learn</h1>
-    <p class="post-meta"><time datetime="2013-02-08T19:18:11-08:00" itemprop="datePublished">Feb 8, 2013</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sean</span></span></p>
+    <h1 class="post-title" itemprop="name headline">Rails without sudo</h1>
+    <p class="post-meta"><time datetime="2019-03-07T00:00:00-08:00" itemprop="datePublished">Mar 7, 2019</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Be careful out there, kids! While many repayment plans are available to college graduates today, it is worth considering the implications of postponing interest payments. If you are going to maintain a Partial Financial Hardship (PFH) for the next 20-25 years, then Income Based Repayment (IBR) or Pay As You Earn (PAYE) may be good options for you, but what if you don’t?</p>
+    <p>The installation process is an unfortunate stumbling block for many people learning Ruby on Rails. While it is easy to get going, it is also too easy to end up using <code class="highlighter-rouge">sudo</code> to install various things as root along the way. I remember this being annoying for me 7 years ago, and revisiting the framework today, it does not seem like much had changed. Hopefully these steps will help!</p>
 
-<blockquote>
-  <p>“President Obama’s new PAYE repayment option is yummy. Thank you, Mr. President!” -Heather Jarvis (<a title="Student Loan Expert" href="http://askheatherjarvis.com/blog/pay-as-you-earn-hotter-than-IBR" target="_blank">Student Loan Expert</a>)<a title="link" href="http://askheatherjarvis.com/blog/pay-as-you-earn-hotter-than-IBR" target="_blank"><br /> </a></p>
-</blockquote>
+<ol>
+  <li>Follow the <a href="https://github.com/rbenv/rbenv#installation">installation instructions</a> for <code class="highlighter-rouge">rbenv</code></li>
+  <li>Before installing bundler or rails, run <code class="highlighter-rouge">rbenv global &lt;version&gt;</code> where <code class="highlighter-rouge">&lt;version&gt;</code> is the latest stable version of Ruby, and <code class="highlighter-rouge">rbenv rehash</code> to make sure it is being used.</li>
+  <li>Now when you run <code class="highlighter-rouge">gem install rails</code> and <code class="highlighter-rouge">rails new</code> you should not be prompted to run any commands using <code class="highlighter-rouge">sudo</code>.</li>
+</ol>
 
-<p>If you can’t maintain a PFH for the entire term of the loan, then the accrued interest that <a title="becomes capitalized" href="http://studentaid.ed.gov/sites/default/files/income-based-repayment-common-questions.pdf" target="_blank">becomes capitalized</a> might not be so “yummy”. That accrued interest is capped at 10% of the balance for the PAYE plan, but there is no cap for the IBR plan. PAYE is only applicable to <em>subsidized</em> federal student loans anyway, so a majority of the student’s debt will most likely be accumulating interest.</p>
-
-<p>Educate yourself before making a decision regarding your student loan repayment plan, or at least do some research before declaring these alternatives a <a title="panacea" href="http://www.nytimes.com/2013/01/01/opinion/relief-for-student-borrowers-in-pay-as-you-earn.html?_r=0" target="_blank">panacea</a>. Compound interest adds up quickly, and although lower payments may seem helpful right now, it could be painful for borrowers who haven’t read the fine print.</p>
+<div class="sean-blog-image">
+  <figure>
+    <a href="/assets/images/seanhelvey/2019/Yay.png" target="_blank"><img alt="todo" class=" lazyloaded" src="/assets/images/seanhelvey/2019/Yay.png" />
+    </a>
+  <figcaption>
+    Yay!
+  </figcaption>
+  </figure>
+</div>
 
   </div>
 

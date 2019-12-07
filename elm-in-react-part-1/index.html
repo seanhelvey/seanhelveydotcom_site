@@ -37,6 +37,9 @@
         <a class="page-link" href="/about.html">About</a>
         <a class="page-link" href="/resume.pdf">Resume</a>
         <a class="page-link" href="/presentations.html">Presentations</a>
+        <a class="page-link" href="/blog.html">Blog</a>        
+        
+          
         
           
         
@@ -62,17 +65,19 @@
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Elm in React Part #1</h1>
-    <p class="post-meta"><time datetime="2018-02-25T00:00:00-07:00" itemprop="datePublished">Feb 25, 2018</time></p>
+    <p class="post-meta"><time datetime="2018-02-25T00:00:00-08:00" itemprop="datePublished">Feb 25, 2018</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     <p>This post will expand upon <a href="http://elm-lang.org/blog/how-to-use-elm-at-work">Evan’s post</a> describing how to use Elm with React. I’ve been using <a href="https://github.com/seanhelvey/react-intro-exercise">this todo list example</a> to teach react for a while now (thanks <a href="https://twitter.com/chadwithuhc">Chad</a>!) so I thought it would make sense to use the same example here. Checkout the Elm branch of the todo list repo linked above if you want to follow along. You can see the whole commit diff for this blog post <a href="https://github.com/seanhelvey/react-intro-exercise/commit/2fcb2ddb9db4b3bb655312a4df1b5dc2d1c88a6d">here</a>.</p>
 
-<p>We need to do a few things to add Elm into our react app:
-1. Npm install <code class="highlighter-rouge">elm-webpack-loader</code> and <code class="highlighter-rouge">react-elm-components</code>
-2. Update Webpack config
-3. Install Elm packages (and add elm-stuff to .gitignore)
-4. Replace React component with Elm</p>
+<p>We need to do a few things to add Elm into our react app:</p>
+<ol>
+  <li>Npm install <code class="highlighter-rouge">elm-webpack-loader</code> and <code class="highlighter-rouge">react-elm-components</code></li>
+  <li>Update Webpack config</li>
+  <li>Install Elm packages (and add elm-stuff to .gitignore)</li>
+  <li>Replace React component with Elm</li>
+</ol>
 
 <div class="sean-blog-image">
   <figure>
@@ -102,10 +107,9 @@
 <h3 id="step-3---install-elm-packages">Step 3 - Install Elm packages</h3>
 <p><a href="https://guide.elm-lang.org/install.html">Install elm</a> if you haven’t already, and then run the following two commands:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>elm-package install elm-lang/core
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elm-package install elm-lang/core
 elm-package install elm-lang/html
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You will want to add <code class="highlighter-rouge">elm-stuff</code> to your <code class="highlighter-rouge">.gitignore</code> at this point.</p>
 
@@ -145,7 +149,7 @@ elm-package install elm-lang/html
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Sean Helvey</h2>
+    <h2 class="footer-heading">Contact Info</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col">

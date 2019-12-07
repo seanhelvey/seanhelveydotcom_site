@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Pay As You Learn</title>
-  <meta name="description" content="Be careful out there, kids! While many repayment plans are available to college graduates today, it is worth considering the implications of postponing inter...">
+  <title>Understanding &#39;this&#39; in JavaScript</title>
+  <meta name="description" content="Here is a snippet and link to my favorite example that you can use to understand this in JavaScript. Make sure you have the console open and read the logs as...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://seanhelvey.com/pay-as-you-learn/">
+  <link rel="canonical" href="http://seanhelvey.com/understanding-this-in-javascript/">
   <link rel="alternate" type="application/rss+xml" title="Sean Helvey" href="http://seanhelvey.com/feed.xml">
   <link rel="icon" type="image/png" href="/assets/images/thinker2.jpg">
 </head>
@@ -64,20 +64,61 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Pay As You Learn</h1>
-    <p class="post-meta"><time datetime="2013-02-08T19:18:11-08:00" itemprop="datePublished">Feb 8, 2013</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sean</span></span></p>
+    <h1 class="post-title" itemprop="name headline">Understanding 'this' in JavaScript</h1>
+    <p class="post-meta"><time datetime="2018-12-11T00:00:00-08:00" itemprop="datePublished">Dec 11, 2018</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Be careful out there, kids! While many repayment plans are available to college graduates today, it is worth considering the implications of postponing interest payments. If you are going to maintain a Partial Financial Hardship (PFH) for the next 20-25 years, then Income Based Repayment (IBR) or Pay As You Earn (PAYE) may be good options for you, but what if you don’t?</p>
+    <p>Here is a snippet and <a href="http://dev.seanhelvey.com/this/this.html">link to my favorite example</a> that you can use to understand <code class="highlighter-rouge">this</code> in JavaScript. Make sure you have the console open and read the logs as you click on the buttons. The code is <a href="https://github.com/seanhelvey/snippets/tree/master/this">here in GitHub</a> as well.</p>
 
-<blockquote>
-  <p>“President Obama’s new PAYE repayment option is yummy. Thank you, Mr. President!” -Heather Jarvis (<a title="Student Loan Expert" href="http://askheatherjarvis.com/blog/pay-as-you-earn-hotter-than-IBR" target="_blank">Student Loan Expert</a>)<a title="link" href="http://askheatherjarvis.com/blog/pay-as-you-earn-hotter-than-IBR" target="_blank"><br /> </a></p>
-</blockquote>
+<div class="sean-blog-image">
+  <figure>
+    <a href="" target="_blank"><img alt="todo" class=" lazyloaded" src="/assets/images/seanhelvey/2018/thisES56.png" />
+    </a>
+  <figcaption>
+    this.age works as expected with an ES6 arrow function
+  </figcaption>
+  </figure>
+</div>
 
-<p>If you can’t maintain a PFH for the entire term of the loan, then the accrued interest that <a title="becomes capitalized" href="http://studentaid.ed.gov/sites/default/files/income-based-repayment-common-questions.pdf" target="_blank">becomes capitalized</a> might not be so “yummy”. That accrued interest is capped at 10% of the balance for the PAYE plan, but there is no cap for the IBR plan. PAYE is only applicable to <em>subsidized</em> federal student loans anyway, so a majority of the student’s debt will most likely be accumulating interest.</p>
+<h1 id="why-this-example">Why ‘this’ example?</h1>
 
-<p>Educate yourself before making a decision regarding your student loan repayment plan, or at least do some research before declaring these alternatives a <a title="panacea" href="http://www.nytimes.com/2013/01/01/opinion/relief-for-student-borrowers-in-pay-as-you-earn.html?_r=0" target="_blank">panacea</a>. Compound interest adds up quickly, and although lower payments may seem helpful right now, it could be painful for borrowers who haven’t read the fine print.</p>
+<p>This example is helpful because it doesn’t need to be transpiled. It works with vanilla JS today in current browsers. Most students these days are working in a React codebase where they can magically write a method as an arrow function, but the <a href="https://github.com/tc39/proposal-class-fields">class fields proposal</a> isn’t official yet. Here is <a href="https://stackoverflow.com/questions/45785117/arrow-functions-within-classes-are-not-supported-in-chrome-but-work-fine-through#answer-45788648">a Stack Overflow answer</a> explaining that with more context.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>console.log("window", this)
+
+class Person {
+    constructor (name, age) {
+        this.name = name;
+        this.age = age;
+
+        this.makeOlderES5 = function(event) {
+            console.log("makeOlderES5")
+            console.log("this", this)
+            console.log("event.target", event.target)
+            this.age++;
+            console.log("this.age", this.age)
+        }
+
+        this.makeOlderES6 = (event) =&gt; {
+            console.log("makeOlderES6")
+            console.log("this", this)
+            console.log("event.target", event.target)
+            this.age++;
+            console.log("this.age", this.age)
+        }
+        console.log("person", this)
+    }
+}
+
+let person = new Person("Jake", 55)
+
+let buttonES5 = document.querySelector(".ES5")
+buttonES5.addEventListener("click", person.makeOlderES5);
+
+let buttonES6 = document.querySelector(".ES6")
+buttonES6.addEventListener("click", person.makeOlderES6);
+</code></pre></div></div>
 
   </div>
 

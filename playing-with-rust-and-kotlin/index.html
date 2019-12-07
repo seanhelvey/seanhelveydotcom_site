@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Pay As You Learn</title>
-  <meta name="description" content="Be careful out there, kids! While many repayment plans are available to college graduates today, it is worth considering the implications of postponing inter...">
+  <title>Playing with Rust and Kotlin</title>
+  <meta name="description" content="While it is clear that I enjoy using Elm for front-end web development, I’ve been trying to find the best tool for simple back-end web applications for sever...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://seanhelvey.com/pay-as-you-learn/">
+  <link rel="canonical" href="http://seanhelvey.com/playing-with-rust-and-kotlin/">
   <link rel="alternate" type="application/rss+xml" title="Sean Helvey" href="http://seanhelvey.com/feed.xml">
   <link rel="icon" type="image/png" href="/assets/images/thinker2.jpg">
 </head>
@@ -64,20 +64,40 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Pay As You Learn</h1>
-    <p class="post-meta"><time datetime="2013-02-08T19:18:11-08:00" itemprop="datePublished">Feb 8, 2013</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Sean</span></span></p>
+    <h1 class="post-title" itemprop="name headline">Playing with Rust and Kotlin</h1>
+    <p class="post-meta"><time datetime="2018-09-15T00:00:00-07:00" itemprop="datePublished">Sep 15, 2018</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Be careful out there, kids! While many repayment plans are available to college graduates today, it is worth considering the implications of postponing interest payments. If you are going to maintain a Partial Financial Hardship (PFH) for the next 20-25 years, then Income Based Repayment (IBR) or Pay As You Earn (PAYE) may be good options for you, but what if you don’t?</p>
+    <p>While it is clear that I enjoy using Elm for front-end web development, I’ve been trying to find the best tool for simple back-end web applications for several years now. I want to share two toy projects I recently started working on in case it is helpful for anyone out there. Both have been deployed to Heroku.</p>
 
-<blockquote>
-  <p>“President Obama’s new PAYE repayment option is yummy. Thank you, Mr. President!” -Heather Jarvis (<a title="Student Loan Expert" href="http://askheatherjarvis.com/blog/pay-as-you-earn-hotter-than-IBR" target="_blank">Student Loan Expert</a>)<a title="link" href="http://askheatherjarvis.com/blog/pay-as-you-earn-hotter-than-IBR" target="_blank"><br /> </a></p>
-</blockquote>
+<h1 id="language-features">Language Features</h1>
 
-<p>If you can’t maintain a PFH for the entire term of the loan, then the accrued interest that <a title="becomes capitalized" href="http://studentaid.ed.gov/sites/default/files/income-based-repayment-common-questions.pdf" target="_blank">becomes capitalized</a> might not be so “yummy”. That accrued interest is capped at 10% of the balance for the PAYE plan, but there is no cap for the IBR plan. PAYE is only applicable to <em>subsidized</em> federal student loans anyway, so a majority of the student’s debt will most likely be accumulating interest.</p>
+<p>Each of these languages has the features that I’m looking for:</p>
+<ul>
+  <li>Static typing</li>
+  <li>Immutability</li>
+  <li>Sum types</li>
+  <li>Safety</li>
+</ul>
 
-<p>Educate yourself before making a decision regarding your student loan repayment plan, or at least do some research before declaring these alternatives a <a title="panacea" href="http://www.nytimes.com/2013/01/01/opinion/relief-for-student-borrowers-in-pay-as-you-earn.html?_r=0" target="_blank">panacea</a>. Compound interest adds up quickly, and although lower payments may seem helpful right now, it could be painful for borrowers who haven’t read the fine print.</p>
+<h1 id="kotlin--ktor">Kotlin &amp; Ktor</h1>
+
+<p><a href="https://github.com/seanhelvey/kotlinplayground">Kotlin Playground</a><br />
+A Kotlin toy back-end. Initially written with Spark before being ported to Ktor.</p>
+
+<p>While Spring may be the obvious choice for Java/Kotlin projects, I tried Spark before settling on Ktor because the framework appears to fully utilize Kotlin’s DSL capabilities. Code looks declarative, but the APIs are mostly function calls with lambdas.</p>
+
+<h1 id="rust--rocket">Rust &amp; Rocket</h1>
+
+<p><a href="https://github.com/seanhelvey/rustplayground">Rust Playground</a><br />
+A Rust toy back-end using the web framework Rocket.</p>
+
+<p>Short to medium term it seems as if Kotlin is my best bet, due to the language features and its widespread adoption. Longer term as the industry (hopefully) moves away from dependency on the JVM, Rust seems very well positioned to gain market share.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Please feel free to follow along as I tinker with these projects! Huge thanks to <a href="https://github.com/bgard6977?tab=followers">Brent Gardner</a> for pairing with me on this and <a href="https://github.com/dam5s">Damien LeBerrigaud</a> for all of the inspiration.</p>
 
   </div>
 
