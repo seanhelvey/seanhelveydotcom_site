@@ -6,9 +6,9 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Dec 2020 18:20:47 -0800</pubDate>
-    <lastBuildDate>Mon, 07 Dec 2020 18:20:47 -0800</lastBuildDate>
-    <generator>Jekyll v3.8.4</generator>
+    <pubDate>Sun, 29 Jan 2023 17:44:19 -0800</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2023 17:44:19 -0800</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
     
       <item>
         <title>Notes on The Yoga Sutras</title>
@@ -97,12 +97,12 @@
     
       <item>
         <title>Rails without sudo</title>
-        <description>&lt;p&gt;The installation process is an unfortunate stumbling block for many people learning Ruby on Rails. While it is easy to get going, it is also too easy to end up using &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; to install various things as root along the way. I remember this being annoying for me 7 years ago, and revisiting the framework today, it does not seem like much had changed. Hopefully these steps will help!&lt;/p&gt;
+        <description>&lt;p&gt;The installation process is an unfortunate stumbling block for many people learning Ruby on Rails. While it is easy to get going, it is also too easy to end up using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; to install various things as root along the way. I remember this being annoying for me 7 years ago, and revisiting the framework today, it does not seem like much had changed. Hopefully these steps will help!&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Follow the &lt;a href=&quot;https://github.com/rbenv/rbenv#installation&quot;&gt;installation instructions&lt;/a&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;rbenv&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Before installing bundler or rails, run &lt;code class=&quot;highlighter-rouge&quot;&gt;rbenv global &amp;lt;version&amp;gt;&lt;/code&gt; where &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;version&amp;gt;&lt;/code&gt; is the latest stable version of Ruby, and &lt;code class=&quot;highlighter-rouge&quot;&gt;rbenv rehash&lt;/code&gt; to make sure it is being used.&lt;/li&gt;
-  &lt;li&gt;Now when you run &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install rails&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;rails new&lt;/code&gt; you should not be prompted to run any commands using &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Follow the &lt;a href=&quot;https://github.com/rbenv/rbenv#installation&quot;&gt;installation instructions&lt;/a&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rbenv&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Before installing bundler or rails, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rbenv global &amp;lt;version&amp;gt;&lt;/code&gt; where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;version&amp;gt;&lt;/code&gt; is the latest stable version of Ruby, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rbenv rehash&lt;/code&gt; to make sure it is being used.&lt;/li&gt;
+  &lt;li&gt;Now when you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install rails&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rails new&lt;/code&gt; you should not be prompted to run any commands using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;div class=&quot;sean-blog-image&quot;&gt;
@@ -124,7 +124,7 @@
     
       <item>
         <title>Understanding 'this' in JavaScript</title>
-        <description>&lt;p&gt;Here is a snippet and &lt;a href=&quot;http://dev.seanhelvey.com/this/this.html&quot;&gt;link to my favorite example&lt;/a&gt; that you can use to understand &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; in JavaScript. Make sure you have the console open and read the logs as you click on the buttons. The code is &lt;a href=&quot;https://github.com/seanhelvey/snippets/tree/master/this&quot;&gt;here in GitHub&lt;/a&gt; as well.&lt;/p&gt;
+        <description>&lt;p&gt;Here is a snippet and &lt;a href=&quot;http://dev.seanhelvey.com/this/this.html&quot;&gt;link to my favorite example&lt;/a&gt; that you can use to understand &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt; in JavaScript. Make sure you have the console open and read the logs as you click on the buttons. The code is &lt;a href=&quot;https://github.com/seanhelvey/snippets/tree/master/this&quot;&gt;here in GitHub&lt;/a&gt; as well.&lt;/p&gt;
 
 &lt;div class=&quot;sean-blog-image&quot;&gt;
   &lt;figure&gt;
@@ -140,7 +140,7 @@
 
 &lt;p&gt;This example is helpful because it doesn’t need to be transpiled. It works with vanilla JS today in current browsers. Most students these days are working in a React codebase where they can magically write a method as an arrow function, but the &lt;a href=&quot;https://github.com/tc39/proposal-class-fields&quot;&gt;class fields proposal&lt;/a&gt; isn’t official yet. Here is &lt;a href=&quot;https://stackoverflow.com/questions/45785117/arrow-functions-within-classes-are-not-supported-in-chrome-but-work-fine-through#answer-45788648&quot;&gt;a Stack Overflow answer&lt;/a&gt; explaining that with more context.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;console.log(&quot;window&quot;, this)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;console.log(&quot;window&quot;, this)
 
 class Person {
     constructor (name, age) {
@@ -289,7 +289,7 @@ A Rust toy back-end using the web framework Rocket.&lt;/p&gt;
   &lt;/figure&gt;
 &lt;/div&gt;
 
-&lt;p&gt;You used create-react-app followed by &lt;code class=&quot;highlighter-rouge&quot;&gt;npm run eject&lt;/code&gt; and now your app doesn’t work on Heroku. You google and find that the maintainers of create-react-app have no answers for you. Can you blame them? They are busy! So here we go:&lt;/p&gt;
+&lt;p&gt;You used create-react-app followed by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm run eject&lt;/code&gt; and now your app doesn’t work on Heroku. You google and find that the maintainers of create-react-app have no answers for you. Can you blame them? They are busy! So here we go:&lt;/p&gt;
 
 &lt;h3 id=&quot;make-sure-you-are-running-the-right-build-pack&quot;&gt;Make sure you are running the right build pack&lt;/h3&gt;
 &lt;p&gt;If you have already deployed your app created with create-react-app to Heroku, you are probably using the create-react-app-buildpack. After ejecting, you will need to remove that buildpack and add the heroku/nodejs buildpack instead.&lt;/p&gt;
@@ -317,7 +317,7 @@ A Rust toy back-end using the web framework Rocket.&lt;/p&gt;
   &lt;/figure&gt;
 &lt;/div&gt;
 
-&lt;p&gt;But you did. So you need to update your procfile to something like &lt;code class=&quot;highlighter-rouge&quot;&gt;web: node scripts/start.js&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;web: react-scripts start&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;But you did. So you need to update your procfile to something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;web: node scripts/start.js&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;web: react-scripts start&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;sean-blog-image&quot;&gt;
   &lt;figure&gt;
@@ -354,23 +354,23 @@ A Rust toy back-end using the web framework Rocket.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&quot;step-1----create-a-htmlprogram&quot;&gt;Step 1 -  Create a Html.program&lt;/h3&gt;
-&lt;p&gt;Take a good look at the &lt;a href=&quot;https://github.com/evancz/react-elm-components/blob/master/example/Chat.elm&quot;&gt;react-elm-components&lt;/a&gt; example and think about how you can solve this problem using The Elm Architecture. I decided that our model could simply be the &lt;code class=&quot;highlighter-rouge&quot;&gt;Input String&lt;/code&gt; portion of the model used in the example.&lt;/p&gt;
+&lt;p&gt;Take a good look at the &lt;a href=&quot;https://github.com/evancz/react-elm-components/blob/master/example/Chat.elm&quot;&gt;react-elm-components&lt;/a&gt; example and think about how you can solve this problem using The Elm Architecture. I decided that our model could simply be the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Input String&lt;/code&gt; portion of the model used in the example.&lt;/p&gt;
 
 &lt;h4 id=&quot;model&quot;&gt;Model&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;type alias Model =
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;type alias Model =
     { input : String }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The Msg and update function could be very similar too. We can still have an &lt;code class=&quot;highlighter-rouge&quot;&gt;Input&lt;/code&gt; case for user input, and we can use the Msg &lt;code class=&quot;highlighter-rouge&quot;&gt;Submit&lt;/code&gt; instead of send.&lt;/p&gt;
+&lt;p&gt;The Msg and update function could be very similar too. We can still have an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Input&lt;/code&gt; case for user input, and we can use the Msg &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Submit&lt;/code&gt; instead of send.&lt;/p&gt;
 
 &lt;h4 id=&quot;msg&quot;&gt;Msg&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;type Msg
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;type Msg
     = Submit
     | Input String
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;update&quot;&gt;Update&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update : Msg -&amp;gt; Model -&amp;gt; ( Model, Cmd Msg )
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;update : Msg -&amp;gt; Model -&amp;gt; ( Model, Cmd Msg )
 update msg model =
     case msg of
         Submit -&amp;gt;
@@ -388,7 +388,7 @@ update msg model =
             )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;What is lowercase “submit” where it says &lt;code class=&quot;highlighter-rouge&quot;&gt;submit oldInput&lt;/code&gt; in the snippet above? That is our port, which we will discuss next. Feel free to replace it with &lt;code class=&quot;highlighter-rouge&quot;&gt;Cmd.none&lt;/code&gt; temporarily and allow the compiler to guide you the rest of the way.&lt;/p&gt;
+&lt;p&gt;What is lowercase “submit” where it says &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;submit oldInput&lt;/code&gt; in the snippet above? That is our port, which we will discuss next. Feel free to replace it with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cmd.none&lt;/code&gt; temporarily and allow the compiler to guide you the rest of the way.&lt;/p&gt;
 
 &lt;p&gt;There is a certain amount of pain and pleasure that we experience using a compiled language. It takes patience and practice in order to become comfortable with the process. Try to have some fun exploring this! Don’t forget that &lt;a href=&quot;https://github.com/seanhelvey/react-intro-exercise&quot;&gt;this todo list repo&lt;/a&gt; has my solution in the Elm branch.&lt;/p&gt;
 
@@ -396,7 +396,7 @@ update msg model =
 &lt;p&gt;We will now wire-up the view to produce a message and display the updated model. Remember our stub view from &lt;a href=&quot;http://www.seanhelvey.com/elm-in-react-part-2/&quot;&gt;Elm in React Part #2&lt;/a&gt;?&lt;/p&gt;
 
 &lt;h4 id=&quot;our-stub-view-function&quot;&gt;Our stub view function&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port module AddCardForm exposing (main)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port module AddCardForm exposing (main)
 
 import Html exposing (text, form, input, label, fieldset)
 import Html.Attributes exposing (attribute, id, class)
@@ -416,7 +416,7 @@ main =
 &lt;p&gt;Let’s make it so that when a user clicks on a button, it produces a message. Once that message has been piped into the update function, we will use the view function to show the new model on screen.&lt;/p&gt;
 
 &lt;h4 id=&quot;the-completed-view-function&quot;&gt;The completed view function&lt;/h4&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;view : Model -&amp;gt; Html Msg
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;view : Model -&amp;gt; Html Msg
 view model =
     let
         options =
@@ -435,15 +435,15 @@ view model =
 &lt;h3 id=&quot;step-3---use-ports-to-communicate-with-javascript--react&quot;&gt;Step 3 - Use ports to communicate with JavaScript / React&lt;/h3&gt;
 &lt;p&gt;To use Elm ports, we need the keyword “port” in front of our module declaration at the top of the file.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port module AddCardForm exposing (main)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port module AddCardForm exposing (main)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now we add a port for sending Strings out to JavaScript or React.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port submit : String -&amp;gt; Cmd msg
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port submit : String -&amp;gt; Cmd msg
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;It could be a different type such as &lt;code class=&quot;highlighter-rouge&quot;&gt;List Float&lt;/code&gt;. &lt;a href=&quot;https://github.com/seanhelvey/valunicorn/blob/master/src/Calculator.elm&quot;&gt;Here is an example&lt;/a&gt; of a port sending a &lt;code class=&quot;highlighter-rouge&quot;&gt;List Float&lt;/code&gt; to JavaScript.&lt;/p&gt;
+&lt;p&gt;It could be a different type such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List Float&lt;/code&gt;. &lt;a href=&quot;https://github.com/seanhelvey/valunicorn/blob/master/src/Calculator.elm&quot;&gt;Here is an example&lt;/a&gt; of a port sending a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List Float&lt;/code&gt; to JavaScript.&lt;/p&gt;
 
 &lt;h3 id=&quot;step-4---subscribe-to-the-port-from-javascript--react&quot;&gt;Step 4 - Subscribe to the port from JavaScript / React&lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&quot;https://github.com/evancz/react-elm-components/blob/master/example/Chat.elm&quot;&gt;react-elm-components&lt;/a&gt; library allows us to very simply wire up ports with our React component in the following way:&lt;/p&gt;
@@ -492,7 +492,7 @@ view model =
 
 &lt;p&gt;One trick I’ve learned trying to teach Elm over the last couple of months is that you can start with a simple view before diving into model and update. I know this might go against other conventional Elm wisdom and I am open to feedback, but something like this here below can be a nice small step toward Elmy goodness IMHO.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port module AddCardForm exposing (main)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port module AddCardForm exposing (main)
 
 import Html exposing (text, form, input, label, fieldset)
 import Html.Attributes exposing (attribute, id, class)
@@ -540,7 +540,7 @@ main =
 
 &lt;p&gt;We need to do a few things to add Elm into our react app:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Npm install &lt;code class=&quot;highlighter-rouge&quot;&gt;elm-webpack-loader&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;react-elm-components&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Npm install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elm-webpack-loader&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;react-elm-components&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Update Webpack config&lt;/li&gt;
   &lt;li&gt;Install Elm packages (and add elm-stuff to .gitignore)&lt;/li&gt;
   &lt;li&gt;Replace React component with Elm&lt;/li&gt;
@@ -574,14 +574,14 @@ main =
 &lt;h3 id=&quot;step-3---install-elm-packages&quot;&gt;Step 3 - Install Elm packages&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://guide.elm-lang.org/install.html&quot;&gt;Install elm&lt;/a&gt; if you haven’t already, and then run the following two commands:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elm-package install elm-lang/core
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elm-package install elm-lang/core
 elm-package install elm-lang/html
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You will want to add &lt;code class=&quot;highlighter-rouge&quot;&gt;elm-stuff&lt;/code&gt; to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; at this point.&lt;/p&gt;
+&lt;p&gt;You will want to add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elm-stuff&lt;/code&gt; to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; at this point.&lt;/p&gt;
 
 &lt;h3 id=&quot;step-4---replace-react-component-with-elm&quot;&gt;Step 4 - Replace React component with Elm&lt;/h3&gt;
-&lt;p&gt;Now we can easily replace the React component in our &lt;code class=&quot;highlighter-rouge&quot;&gt;app.js&lt;/code&gt; file with Elm:&lt;/p&gt;
+&lt;p&gt;Now we can easily replace the React component in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.js&lt;/code&gt; file with Elm:&lt;/p&gt;
 
 &lt;div class=&quot;sean-blog-image&quot;&gt;
   &lt;figure&gt;
@@ -614,9 +614,9 @@ elm-package install elm-lang/html
     
       <item>
         <title>Nested React Routes in v4</title>
-        <description>&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt; in React Router v4 works for plain old child components, but not when your child component is a nested &lt;code class=&quot;highlighter-rouge&quot;&gt;Route&lt;/code&gt;. In &lt;a href=&quot;https://github.com/seanhelvey/react-router-quickstart-nested-routes/&quot;&gt;this example&lt;/a&gt; I’ve taken the react router quickstart tweaked it to pass props into a wrapped route.&lt;/p&gt;
+        <description>&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt; in React Router v4 works for plain old child components, but not when your child component is a nested &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Route&lt;/code&gt;. In &lt;a href=&quot;https://github.com/seanhelvey/react-router-quickstart-nested-routes/&quot;&gt;this example&lt;/a&gt; I’ve taken the react router quickstart tweaked it to pass props into a wrapped route.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 const WrappedRoute = (props) =&amp;gt; {
   console.log(&quot;WrappedRoute props&quot;, props)
   return(
