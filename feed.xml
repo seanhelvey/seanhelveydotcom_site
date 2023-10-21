@@ -6,9 +6,24 @@
 </description>
     <link>http://seanhelvey.com/</link>
     <atom:link href="http://seanhelvey.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2023 06:56:04 -0800</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2023 06:56:04 -0800</lastBuildDate>
+    <pubDate>Sat, 21 Oct 2023 07:51:51 -0700</pubDate>
+    <lastBuildDate>Sat, 21 Oct 2023 07:51:51 -0700</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>Teaching Yoga</title>
+        <description>&lt;p&gt;It has been nearly 4 years since my last blog post! In 2019 I had left a job I loved teaching software development in Colorado and moved back to California. After living in New York City from 2007-2012 and then Boulder until 2019, I felt like I was holding my breath in between surf trips, and formed an intention to plant roots on the California coast.&lt;/p&gt;
+
+&lt;p&gt;The transition was much more difficult than anticipated, enduring personal and professional challenges, along with the pandemic. I am so grateful to have been able to build community here in Santa Barbara through that journey. My (remote) work at at &lt;a href=&quot;https://www.kfh.org/&quot; target=&quot;_blank&quot;&gt;Koinonia Family Services&lt;/a&gt; played a huge part, channeling my passion for technology into a sustainable role.&lt;/p&gt;
+
+&lt;p&gt;I had been “doing yoga” on and off for over 20 years at various gyms, but becoming more involved at &lt;a href=&quot;https://www.yogasoup.com/&quot; target=&quot;_blank&quot;&gt;Yoga Soup&lt;/a&gt; during this period gave me a new perspective on what a yoga studio could be. The people and offerings like breathwork and ecstatic dance changed my life completely. After volunteering as a Shine Ambassador for years, I completed a 200 hour teacher training. If you look back at my last post from 2019, you can see where my interest in yoga really began to enliven, and now in 2023 it has come full circle into its first full revolution.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Oct 2023 00:00:00 -0700</pubDate>
+        <link>http://seanhelvey.com/teaching-yoga/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/teaching-yoga/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Notes on The Yoga Sutras</title>
@@ -89,8 +104,8 @@
 &lt;h4 id=&quot;sutra-34-we-can-achieve-independence-and-rest-in-our-own-true-nature-if-we-allow-our-body-and-mind-to-function-without-fixation-all-of-this-yoga-is-actually-needed-by-the-ego-and-done-with-the-mind-and-body-you-can-let-the-ego-mind-and-body-rest-in-peace-though-reflecting-your-true-higher-self-learn-to-lead-a-dedicated-life-serving-others&quot;&gt;Sutra #34 We can achieve Independence and rest in our own true nature if we allow our body and mind to function without fixation. All of this yoga is actually needed by the ego and done with the mind and body. You can let the ego, mind, and body rest in peace though, reflecting your true higher Self. Learn to lead a dedicated life serving others.&lt;/h4&gt;
 </description>
         <pubDate>Sat, 07 Dec 2019 00:00:00 -0800</pubDate>
-        <link>http://seanhelvey.com/notes-on-the-yoga-sutras/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/notes-on-the-yoga-sutras/</guid>
+        <link>http://seanhelvey.com/notes-on-the-yoga-sutras-copy/</link>
+        <guid isPermaLink="true">http://seanhelvey.com/notes-on-the-yoga-sutras-copy/</guid>
         
         
       </item>
@@ -608,34 +623,6 @@ elm-package install elm-lang/html
         <pubDate>Sun, 25 Feb 2018 00:00:00 -0800</pubDate>
         <link>http://seanhelvey.com/elm-in-react-part-1/</link>
         <guid isPermaLink="true">http://seanhelvey.com/elm-in-react-part-1/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Nested React Routes in v4</title>
-        <description>&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt; in React Router v4 works for plain old child components, but not when your child component is a nested &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Route&lt;/code&gt;. In &lt;a href=&quot;https://github.com/seanhelvey/react-router-quickstart-nested-routes/&quot;&gt;this example&lt;/a&gt; I’ve taken the react router quickstart tweaked it to pass props into a wrapped route.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-const WrappedRoute = (props) =&amp;gt; {
-  console.log(&quot;WrappedRoute props&quot;, props)
-  return(
-    &amp;lt;div&amp;gt;
-      &amp;lt;h3&amp;gt;{props.yo()}&amp;lt;/h3&amp;gt;
-      &amp;lt;Route path={`${props.match.path}/:topicId`} render={Topic}/&amp;gt;
-    &amp;lt;/div&amp;gt;
-  );
-}
-
-&amp;lt;WrappedRoute yo={() =&amp;gt; &quot;yo&quot;} {...props}&amp;gt;&amp;lt;/WrappedRoute&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Please &lt;a href=&quot;https://twitter.com/seanhelvey&quot;&gt;Let me know&lt;/a&gt; if you disagree with this approach or have a better alternative. Hope this helps!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 14 Jan 2018 00:00:00 -0800</pubDate>
-        <link>http://seanhelvey.com/nested-react-router-v4/</link>
-        <guid isPermaLink="true">http://seanhelvey.com/nested-react-router-v4/</guid>
         
         
       </item>
